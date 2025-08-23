@@ -1,0 +1,164 @@
+
+
+
+$utilities: map-merge(
+    $utilities,
+    (
+        "rounded": (
+            property: border-radius,
+            class: rounded,
+            values: (
+                null: $border-radius,  // 6
+                0: 0,
+                1: $border-radius-sm,    // 4
+                2: $border-radius,       // 6
+                3: $border-radius-ml,  // 8
+                4: $border-radius-lg,    // 12
+                5: $border-radius-xl,    // 16
+                6: $border-radius-xxl,   // 20
+                7: $border-radius-3xl,   // 24
+                8: $border-radius-4xl,   // 32
+                circle: 50%,
+                pill: var(--#{$prefix}border-radius-pill)
+            )
+        ),
+        
+        "font-size": map-merge(
+        map-get($utilities, "font-size"),
+        ( responsive: true ),
+        ),
+    )
+);
+
+.w-70{
+    width: 70%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-33{
+    width: 33%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-45{
+    width: 45%;
+}
+
+.w-49{
+    width: 49%;
+}
+
+.w-55{
+    width: 55%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+
+.w-60px{
+    width: 60px;
+}
+
+.w-150px{
+    width: 150px;
+}
+
+.w-200px{
+    width: 200px;
+}
+
+.w-720px{
+    width: 720px;
+}
+
+.h-200px{
+    height: 200px;
+}
+
+.h-232px{
+    height: 232px;
+}
+
+.h-240px{
+    height: 240px;
+}
+
+
+.object-fit-cover{
+    object-fit: cover;
+}
+
+
+.z-index-1{
+    z-index: 1;
+}
+
+.me-lose-12{
+    margin-right: -12px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+
+
+.menu-active{
+    border-left: 4px solid $primary;
+    padding-left: 16px;
+    font-weight: 700;
+}
+
+
+
+@include size-lg{
+    .w-lg-20{
+        width: 20%;
+    }
+
+    .w-lg-80{
+        width: 80%;
+    }
+    .w-lg-45{
+        width: 45%;
+    }
+    .w-lg-608px{
+        width: 608px;
+    }
+    .w-lg-55{
+        width: 55%;
+    }
+    .w-lg-100{
+        width: 100%;
+    }
+
+    
+}
+
+@include size-sm{
+    .w-sm-100{
+        width: 100%;
+    }
+    .w-sm-64px{
+        width: 64px;
+    }
+}
+
+
+

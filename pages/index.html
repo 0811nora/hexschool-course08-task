@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>ZOBAA! 旅遊</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="index-main">
+      <!-- banner區塊 -->
+      <section class="banner">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 ">
+              <h3 class="fw-bold text-primary fs-7 fs-lg-6 bg-primary-10 rounded-3 d-inline-block p-2 p-lg-4 mb-3 ">ZOBAA 旅行推薦平台</h2>
+              <h1 class="fw-bold fs-3 fs-lg-2xl text-primary mb-2 mb-lg-6 ">
+                <span class="d-block d-lg-inline">用旅行，</span>
+                <span>收藏世界的樣子</span>
+              </h1>
+              <p class="fs-8 fs-lg-6 fw-bold text-primary-80 mb-6 mb-lg-10">ZOBAA 整合熱門景點推薦、即時優惠、獨家行程，從比價到訂購，一次完成你的完美出遊計畫。</p>
+
+              <form class="position-relative banner-search">
+                <img src="/assets/images/search-light-icon.svg" class="position-absolute ps-2 top-50 start-0 translate-middle-y" alt="search-icon">
+                <input type="search" class="form-control ps-10 py-5 rounded-5 " id="exampleFormControlInput1" placeholder="搜尋景點、地點或城市">
+                <button type="submit" class="btn btn-default-s bg-primary position-absolute top-50 end-0 translate-middle-y text-white me-2">開始探索旅程</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 推薦區塊 -->
+      <section class="recommend py-10 py-lg-15">
+        <!-- 推薦區-標題 -->
+        <div class="container mb-lg-13 mb-10">
+          <div class="text-white d-lg-flex  flex-lg-row justify-content-lg-between align-items-center mb-ls-13 mb-10">
+            <h2 class="fs-3 fs-lg-2xl fw-bold mb-6">你的<br>專屬推薦</h2>
+            <div>
+              <p class="fs-8 fs-lg-6 mb-3 mb-lg-6 fw-bold">來看我們的精選推薦行程，滿意度高達 <br>99.2%給自己一個難忘的旅遊行程吧！</p>
+              <a href="" class="text-white fs-8 fs-lg-7 fw-bold">查看全部行程 <img src="/assets/images/r-arrow-white-icon.svg" alt="" class="ms-2">
+              </a>
+            </div>
+          </div>
+        </div>
+
+          <!-- 推薦區-卡片 -->
+        <div class="container d-flex gap-4 gap-lg-6 overflow-x-auto ">
+          <div class="card text-bg-dark rounded-7 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/assets/images/recommend.png" class="card-img h-100 object-fit-cover" alt="峇里島">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h4 class="mb-2 fs-4 fs-lg-2">峇里島渡假漫遊</h4>
+              <p class="fs-8 mb-6 fs-lg-7">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+
+              <a href="location-search.html" class="btn btn-white rounded-pill p-0">
+                <div class=" d-flex justify-content-between p-5  ">
+                  <p class="fw-bold">訂購行程</p>
+                  <img class="align-top" src="/assets/images/r-arrow-black-icon.svg" alt="">
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="card text-bg-dark rounded-7 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/assets/images/recommend-1.png" class="card-img h-100 object-fit-cover" alt=".日本">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h4 class="mb-2 fs-4 fs-lg-2">日本深度賞櫻計畫</h4>
+              <p class="fs-8 mb-6 fs-lg-7">春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。</p>
+
+              <a href="location-search.html" class="btn btn-white rounded-pill p-0">
+                <div class=" d-flex justify-content-between p-5  ">
+                  <p class="fw-bold">訂購行程</p>
+                  <img class="align-top" src="/assets/images/r-arrow-black-icon.svg" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="card text-bg-dark rounded-7 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/assets/images/recommend-2.png" class="card-img h-100 object-fit-cover" alt="紐西蘭">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h4 class="mb-2 fs-4 fs-lg-2">紐西蘭雪山探險</h4>
+              <p class="fs-8 mb-6 fs-lg-7">探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。</p>
+              <a href="location-search.html" class="btn btn-white rounded-pill p-0">
+                <div class=" d-flex justify-content-between p-5  ">
+                  <p class="fw-bold">訂購行程</p>
+                  <img class="align-top" src="/assets/images/r-arrow-black-icon.svg" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="card text-bg-dark rounded-7 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+            <img src="/assets/images/recommend-3.png" class="card-img h-100 object-fit-cover" alt="摩洛哥">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h4 class="mb-2 fs-4 fs-lg-2">摩洛哥迷幻之旅</h4>
+              <p class="fs-8 mb-6 fs-lg-7">漫步沙漠與古城之間，探索千年文化與色彩繽紛的市集風情。</p>
+              
+              <a href="location-search.html" class="btn btn-white rounded-pill p-0">
+                <div class=" d-flex justify-content-between p-5  ">
+                  <p class="fw-bold">訂購行程</p>
+                  <img class="align-top" src="/assets/images/r-arrow-black-icon.svg" alt="">
+                </div>
+              </a>
+              
+            </div>
+          </div>
+
+
+        </div>
+        
+      </section>
+      
+      <!-- 旅程第一站區塊 -->
+      <section class="hot-topics py-10 py-lg-15 position-relative">
+        <img src="/assets/images/deco-text.svg" class="d-none d-lg-block position-absolute deco-text" alt="">
+        
+        <div class="container ">
+          
+          <div class="row flex-lg-row-reverse justify-content-lg-between align-items-lg-center">
+
+            <div class="col-lg-4 mb-10 d-lg-flex justify-content-lg-end">
+              <div>
+                <h3 class="fs-3 fs-lg-2xl fw-bold text-primary mb-6">ZOBAA! <br>踏上旅程的 <br>第一站</h3>
+                <p class="fs-8 fs-lg-6 text-primary-60 fw-bold">探索最熱門的旅遊主題，<br> 從旅人必備攻略到獨家優惠， <br>全都為你精挑細選。</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-6 ">
+              
+              <div class="row ">
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img src="/assets/images/intro-1.png" class="card-img-top" alt="...">
+                    <div class="card-body p-6">
+                      <h4 class="fs-6 fw-bold mb-2">ZOBAA 專屬推薦行程</h4>
+                      <p>嚴選深度行程，豐富旅行靈感 </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img src="/assets/images/intro-2.png" class="card-img-top" alt="...">
+                    <div class="card-body p-6">
+                      <h4 class="fs-6 fw-bold mb-2">旅人攻略集合</h4>
+                      <p>景點、交通、私房景點一次掌握 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row offset-row">
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+                    <img src="/assets/images/intro-3.png" class="card-img-top" alt="...">
+                    <div class="card-body p-6">
+                      <h4 class="fs-6 fw-bold mb-2">優惠機票、酒店</h4>
+                      <p>即時比價，聰明出發不踩雷 </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-6 ">
+                  <div class="card mb-4">
+                    <img src="/assets/images/intro-4.png" class="card-img-top" alt="...">
+                    <div class="card-body p-6">
+                      <h4 class="fs-6 fw-bold mb-2">銀行專屬優惠</h4>
+                      <p>使用指定卡別享受獨家旅遊好康 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <!-- 旅行地圖區 -->
+      <section class="travel-map py-10 py-lg-15">
+
+        <div class="container ">
+          <div class="d-lg-flex justify-content-lg-between">
+            <div class="">
+              <h2 class="fs-3 fs-lg-2xl mb-6 text-primary">今年旅行的 <br>靈感地圖</h2>
+              <ul class="nav nav-pills mb-3 fw-bold flex-nowrap overflow-x-auto mb-6" id="pills-tab" role="tablist">
+                <li class="nav-item me-2 flex-shrink-0" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" type="button" role="tab" aria-selected="true">全部</button>
+                </li>
+                <li class="nav-item me-2 flex-shrink-0" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" type="button" role="tab"  aria-selected="false">亞洲</button>
+                </li>
+                <li class="nav-item me-2 flex-shrink-0" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" type="button" role="tab"  aria-selected="false">歐洲</button>
+                </li>
+                <li class="nav-item me-2 flex-shrink-0" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" type="button" role="tab"  aria-selected="false">美洲</button>
+                </li>
+                <li class="nav-item me-2 flex-shrink-0" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" type="button" role="tab"  aria-selected="false">大洋洲</button>
+                </li>
+                <li class="nav-item me-2 flex-shrink-0" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" type="button" role="tab"  aria-selected="false">非洲</button>
+                </li>
+                
+              </ul>
+            </div>
+
+            <div class="">
+              <div class="text-lg-end position-relative ">
+                <p class="fs-8 fw-bold text-primary mb-lg-6">來自旅人搜尋、收藏與討論最多的目的地排行榜， <br>一場風格與故事感兼具的靈感旅行，就從這裡開始。
+                </p>
+                <div class="d-none d-lg-block">
+                  <button type="button" class="btn border-0 bg-white p-4 rounded-4 me-2">
+                    <span class="material-symbols-outlined align-middle">
+                      arrow_back
+                    </span>
+                  </button>
+                  <button type="button" class="btn border-0 bg-white p-4 rounded-4">
+                    <span class="material-symbols-outlined align-middle">
+                      arrow_forward
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- 卡片區塊 -->
+          <div class="pt-lg-13 pt-10 d-flex overflow-x-auto gap-4 gap-lg-6">
+
+            <!-- 地圖第 1 張 -->
+            <div class="card p-4 rounded-7 position-relative flex-shrink-0 " >
+              <h5 class="poppins position-absolute">1</h5>
+              <div class="d-lg-flex gap-lg-8">
+
+                <div class=" w-lg-300px mb-2 mb-lg-0">
+                  <img src="/assets/images/map-1.png" class="map-card-img h-lg-100 w-100 rounded-5" alt="">
+                </div>
+
+                <div class=" w-lg-366px">
+                  <div class="mb-2 ">
+                    <a href="#" class="btn bg-primary-10 text-primary btn-default-xs fw-bold me-2" >亞洲</a>
+                    <a href="#" class="btn bg-primary-10 text-primary btn-default-xs fw-bold me-2" >日本京都</a>
+                  </div>
+                  
+                  <h3 class="fs-3 fs-lg-1 mb-2 fw-bold">走進四季交織的文化時光</h3>
+                  <p class="text-neutral-80 mb-6">穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。</p>
+
+                  <div class="d-lg-flex align-items-center gap-lg-3 mb-lg-10">
+                    <div class="">
+                      <a href="#" class="btn bg-primary-10 text-primary p-2 fw-bold me-2 mb-2 m-lg-0 text-nowrap " >ZOBAA 建議</a>
+                    </div>
+                    <p class="mb-4 mb-lg-0">賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁</p>
+                  </div>
+
+                  <a href="location-search.html" class="btn btn-black rounded-pill p-4 w-100  d-flex justify-content-between align-items-center">
+                    <p class="text-white ps-3 mb-0 fw-bold">立即探索魅力古都</p>
+                    <img src="/assets/images/r-arrow-circle.svg" class="r-arrow-circle" alt="">
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- 地圖第 2 張 -->
+            <div class="card p-4 rounded-7 position-relative flex-shrink-0 " >
+              <h5 class="poppins position-absolute">2</h5>
+              <div class="d-lg-flex gap-lg-8">
+
+                <div class=" w-lg-300px mb-2 mb-lg-0">
+                  <img src="/assets/images/map-2.png" class="map-card-img h-lg-100 w-100 rounded-5" alt="">
+                </div>
+
+                <div class=" w-lg-366px">
+                  <div class="mb-2 ">
+                    <a href="#" class="btn bg-primary-10 text-primary btn-default-xs fw-bold me-2" >亞洲</a>
+                    <a href="#" class="btn bg-primary-10 text-primary btn-default-xs fw-bold me-2" >日本京都</a>
+                  </div>
+                  
+                  <h3 class="fs-3 fs-lg-1 mb-2 fw-bold">從街邊美食到韓劇場景</h3>
+                  <p class="text-neutral-80 mb-6">白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。</p>
+
+                  <div class="d-lg-flex align-items-center gap-lg-3 mb-lg-10">
+                    <div class="">
+                      <a href="#" class="btn bg-primary-10 text-primary p-2 fw-bold me-2 mb-2 m-lg-0 text-nowrap " >ZOBAA 建議</a>
+                    </div>
+                    <p class="mb-4 mb-lg-0">弘大周邊週五傍晚最熱鬧，小吃與街頭藝人齊發✨</p>
+                  </div>
+                  
+                  <a href="location-search.html" class="btn btn-black rounded-pill p-4 w-100  d-flex justify-content-between align-items-center">
+                    <p class="text-white ps-3 mb-0 fw-bold">感受韓系風格日常</p>
+                    <img src="/assets/images/r-arrow-circle.svg" class="r-arrow-circle" alt="">
+                  </a>
+
+
+                </div>
+              </div>
+            </div>
+
+            <!-- 地圖第 3 張 -->
+            <div class="card p-4 rounded-7 position-relative flex-shrink-0 " >
+              <h5 class="poppins position-absolute">3</h5>
+              <div class="d-lg-flex gap-lg-8">
+
+                <div class=" w-lg-300px mb-2 mb-lg-0">
+                  <img src="/assets/images/map-3.png" class="map-card-img h-lg-100 w-100 rounded-5" alt="">
+                </div>
+
+                <div class=" w-lg-366px">
+                  <div class="mb-2 ">
+                    <a href="#" class="btn bg-primary-10 text-primary btn-default-xs fw-bold me-2" >歐洲</a>
+                    <a href="#" class="btn bg-primary-10 text-primary btn-default-xs fw-bold me-2" >法國巴黎</a>
+                  </div>
+                  
+                  <h3 class="fs-3 fs-lg-1 mb-2 fw-bold">在藝術與咖啡香中迷路</h3>
+                  <p class="text-neutral-80 mb-6">穿梭左岸書店與畫廊，任由麵包香與建築細節擁抱你的步伐。</p>
+
+                  <div class="d-lg-flex align-items-center gap-lg-3 mb-lg-10">
+                    <div class="">
+                      <a href="#" class="btn bg-primary-10 text-primary p-2 fw-bold me-2 mb-2 m-lg-0 text-nowrap " >ZOBAA 建議</a>
+                    </div>
+                    <p class="mb-4 mb-lg-0">走進瑪黑區，最容易與巴黎風格不期而遇 ☕️</p>
+                  </div>
+                  
+                  <a href="location-search.html" class="btn btn-black rounded-pill p-4 w-100  d-flex justify-content-between align-items-center">
+                    <p class="text-white ps-3 mb-0 fw-bold">迷失在咖啡氣息之中</p>
+                    <img src="/assets/images/r-arrow-circle.svg" class="r-arrow-circle" alt="">
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- 地圖第 4 張 -->
+            <div class="card p-4 rounded-7 position-relative flex-shrink-0 " >
+              <h5 class="poppins position-absolute">4</h5>
+              <div class="d-lg-flex gap-lg-8">
+
+                <div class=" w-lg-300px mb-2 mb-lg-0">
+                  <img src="/assets/images/map-4.png" class="map-card-img h-lg-100 w-100 rounded-5" alt="">
+                </div>
+
+                <div class=" w-lg-366px">
+                  <div class="mb-2 ">
+                    <a href="#" class="btn bg-primary-10 text-primary btn-default-xs fw-bold me-2" >大洋洲</a>
+                    <a href="#" class="btn bg-primary-10 text-primary btn-default-xs fw-bold me-2" >澳洲雪梨</a>
+                  </div>
+                  
+                  <h3 class="fs-3 fs-lg-1 mb-2 fw-bold">城市與大自然的交會</h3>
+                  <p class="text-neutral-80 mb-6">清晨在海灘做瑜珈，午後漫步歌劇院，享受城市的節奏與野性的呼喚。</p>
+
+                  <div class="d-lg-flex align-items-center gap-lg-3 mb-lg-10">
+                    <div class="">
+                      <a href="#" class="btn bg-primary-10 text-primary p-2 fw-bold me-2 mb-2 m-lg-0 text-nowrap " >ZOBAA 建議</a>
+                    </div>
+                    <p class="mb-4 mb-lg-0">別錯過傍晚在雪梨港看日落＋欣賞歌劇院夜燈 ✨</p>
+                  </div>
+
+                  <a href="location-search.html" class="btn btn-black rounded-pill p-4 w-100  d-flex justify-content-between align-items-center">
+                    <p class="text-white ps-3 mb-0 fw-bold">享受美好的城市大自然</p>
+                    <img src="/assets/images/r-arrow-circle.svg" class="r-arrow-circle" alt="">
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- 地圖第 5 張 -->
+            <div class="card p-4 rounded-7 position-relative flex-shrink-0 " >
+              <h5 class="poppins position-absolute">5</h5>
+              <div class="d-lg-flex gap-lg-8">
+
+                <div class=" w-lg-300px mb-2 mb-lg-0">
+                  <img src="/assets/images/map-5.png" class="map-card-img h-lg-100 w-100 rounded-5" alt="">
+                </div>
+
+                <div class=" w-lg-366px">
+                  <div class="mb-2 ">
+                    <a href="#" class="btn bg-primary-10 text-primary btn-default-xs fw-bold me-2" >非洲</a>
+                    <a href="#" class="btn bg-primary-10 text-primary btn-default-xs fw-bold me-2" >埃及開羅</a>
+                  </div>
+                  
+                  <h3 class="fs-3 fs-lg-1 mb-2 fw-bold">穿越千年時光的沙漠冒險</h3>
+                  <p class="text-neutral-80 mb-6">乘著駱駝走過古老遺跡，抬頭仰望太陽神的光芒，在歷史與傳說之間迷失。</p>
+
+                  <div class="d-lg-flex align-items-center gap-lg-3 mb-lg-10">
+                    <div class="">
+                      <a href="#" class="btn bg-primary-10 text-primary p-2 fw-bold me-2 mb-2 m-lg-0 text-nowrap " >ZOBAA 建議</a>
+                    </div>
+                    <p class="mb-4 mb-lg-0">建議早上 8 點前到吉薩金字塔，避開人潮與烈日 ☀️</p>
+                  </div>
+
+                  <a href="location-search.html" class="btn btn-black rounded-pill p-4 w-100  d-flex justify-content-between align-items-center">
+                    <p class="text-white ps-3 mb-0 fw-bold">穿越千年的沙漠</p>
+                    <img src="/assets/images/r-arrow-circle.svg" class="r-arrow-circle" alt="">
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+
+      </section>
+
+      <!-- 參考行程區 -->
+      <section class="">
+        <div class="container py-10 py-lg-15">
+          <div class="mb-lg-15 mb-10 position-relative">
+            <div>
+              <img src="/assets/images/bg-井.svg" class="hashtag position-absolute" alt="">
+            </div>
+            <h2 class="fs-3 fs-lg-2xl">搜尋墨爾本嗎？ <br>來點行程參考！</h2>
+          </div>
+
+          <div class="position-relative ">
+            <div class="swiper mySwiper me-lose-12">
+              <div class="swiper-wrapper ">
+                <!-- 參考行程1 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 ">
+                      <div class="position-relative">
+                        <img src="/assets/images/journey-1.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">即買即用</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">5 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.2 <span class="text-neutral-60">(333)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">500+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 4,220</p>
+                          <del class="text-neutral-60">NT$ 5,220</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程2 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 ">
+                    <div class="position-relative">
+                      <img src="/assets/images/journey-2.png" class="card-img-top rounded-6" alt="...">
+                    </div>
+                    <div class="position-absolute top-0 end-0  heart-bg">
+                      <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                    </div>
+                    
+                    <div class="card-body px-0">
+                      <h5 class="mb-2 fw-bold fs-lg-7 title-height">無尾熊動物園＋企鵝歸巢雙享之旅</h5>
+                      <div class="mb-2">
+                        <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">即買即用</span>
+                        <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">7 天前可免費取消</span>
+                      </div>
+                      <div class="pb-4 border-bottom">
+                        <span class="text-neutral-80">
+                          <img src="/assets/images/star-yellow-icon.svg" alt="">
+                          <span class="pe-3 ">4.2 <span class="text-neutral-60">(333)</span></span>
+                        </span>
+                        <span class="ps-3 border-start">500+ 個已訂購</span>
+                      </div>
+                      <div class="pt-4">
+                        <p class="text-primary fs-6 fw-bold ">NT$ 3,892</p>
+                        <del class="text-neutral-60">NT$ 4,920</del>
+                      </div>
+                    </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程3 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 ">
+                      <div class="position-relative">
+                        <img src="/assets/images/journey-3.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">中文導覽</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">5 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.2 <span class="text-neutral-60">(333)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">500+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 3,690</p>
+                          <del class="text-neutral-60">NT$ 4,500</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程4 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 ">
+                      <div class="position-relative">
+                        <img src="/assets/images/journey-4.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">專業導覽</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">3 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.2 <span class="text-neutral-60">(333)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">500+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 1,280</p>
+                          <del class="text-neutral-60">NT$ 2480</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程1 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 ">
+                      <div class="position-relative">
+                        <img src="/assets/images/journey-1.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">即買即用</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">5 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.2 <span class="text-neutral-60">(333)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">500+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 4,220</p>
+                          <del class="text-neutral-60">NT$ 5,220</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程2 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 ">
+                    <div class="position-relative">
+                      <img src="/assets/images/journey-2.png" class="card-img-top rounded-6" alt="...">
+                    </div>
+                    <div class="position-absolute top-0 end-0  heart-bg">
+                      <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                    </div>
+                    
+                    <div class="card-body px-0">
+                      <h5 class="mb-2 fw-bold fs-lg-7 title-height">無尾熊動物園＋企鵝歸巢雙享之旅</h5>
+                      <div class="mb-2">
+                        <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">即買即用</span>
+                        <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">7 天前可免費取消</span>
+                      </div>
+                      <div class="pb-4 border-bottom">
+                        <span class="text-neutral-80">
+                          <img src="/assets/images/star-yellow-icon.svg" alt="">
+                          <span class="pe-3 ">4.2 <span class="text-neutral-60">(333)</span></span>
+                        </span>
+                        <span class="ps-3 border-start">500+ 個已訂購</span>
+                      </div>
+                      <div class="pt-4">
+                        <p class="text-primary fs-6 fw-bold ">NT$ 3,892</p>
+                        <del class="text-neutral-60">NT$ 4,920</del>
+                      </div>
+                    </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程3 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 ">
+                      <div class="position-relative">
+                        <img src="/assets/images/journey-3.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">中文導覽</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">5 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.2 <span class="text-neutral-60">(333)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">500+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 3,690</p>
+                          <del class="text-neutral-60">NT$ 4,500</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程4 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 ">
+                      <div class="position-relative">
+                        <img src="/assets/images/journey-4.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">專業導覽</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">3 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.2 <span class="text-neutral-60">(333)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">500+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 1,280</p>
+                          <del class="text-neutral-60">NT$ 2480</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                
+
+                
+                
+              </div>
+              
+            </div>
+
+            <!-- 輪播箭頭按鈕 -->
+            <div class="swiper-button-next d-none d-lg-block">
+                <span class="material-symbols-outlined align-middle p-4 bg-white shadow rounded-4 ">
+                  arrow_forward
+                </span>
+              </div>
+              <div class="swiper-button-prev d-none d-lg-block">
+                <span class="material-symbols-outlined align-middle p-4 bg-white shadow rounded-4">
+                  arrow_back
+                </span>
+              </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden">
+          <div class="mb-lg-8 mb-3 d-flex  marquee-anime">
+            <img src="/assets/images/bg-title-1.svg"  alt="">
+            <img src="/assets/images/bg-title-2.svg"  alt="">
+            <img src="/assets/images/bg-title-3.svg"  alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- 請選擇我們區 -->
+      <section class="bg-primary-40 overflow-hidden choose-area position-relative">
+        <img src="/assets/images/bg-down.svg" class="position-absolute bgcircle1 d-none d-lg-block" alt="">
+        <img src="/assets/images/bg-line.svg" class="position-absolute bgline d-none d-lg-block"  alt="">
+        <img src="/assets/images/bg-down.svg" class="position-absolute bgcircle2 d-none d-lg-block" alt="">
+
+        <div class="container py-10 py-lg-15">
+          <div class="mb-2 mb-lg-6 position-relative z-index-1">
+            <img src="/assets/images/card.png" class="w-100 d-none d-lg-block" alt="">
+            <img src="/assets/images/card-sm.png" class="w-100 d-lg-none" alt="">
+          </div>
+
+          <div class="choose rounded-7 p-6 p-lg-8 d-lg-flex justify-content-lg-between">
+            <div class="mb-6 mb-lg-0 ">
+              <h3 class="text-primary fw-bold fs-5 fs-lg-1 mb-4 mb-lg-6">為什麼選擇 ZOBAA ?</h3>
+              <div class="fs-8 fs-lg-7 mb-lg-6 text-neutral-80">
+                <p>不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。</p>
+                <p>ZOBΛA 希望你能放心探索世界，把記憶留給旅程本身。</p>
+              </div>
+              <a href="#" class="btn btn-black rounded-pill p-6 d-lg-inline-block d-none">
+                <div class=" d-lg-flex justify-content-between align-items-center">
+                  <p class="text-white px-3 fs-lg-6">立即探索我們的精心旅程</p>
+                  <img src="/assets/images/r-arrow-circle.svg" class="r-arrow-circle " alt="">
+                </div>
+              </a>
+
+            </div>
+
+
+            <div class="d-lg-flex gap-lg-4 ">
+              <div class="bg-white rounded-5 p-6 mb-4 mb-lg-0 small-card d-lg-flex flex-lg-column justify-content-center">
+                <div class="">
+                  <h3 class="fw-bold  text-primary position-relative d-inline-block pe-3 mb-2 fs-3 fs-lg-1">8 年 
+                    <span class="fw-bold position-absolute top-0 start-100 translate-middle fs-4 ">+</span>
+                  </h3>
+                </div>
+                <p class=" fw-bold text-primary-80 fs-lg-6">旅遊企劃經驗</p>
+              </div>
+
+              <div class="bg-white rounded-5 p-6 mb-4 mb-lg-0 small-card d-lg-flex flex-lg-column justify-content-center">
+                <div>
+                  <h3 class="fw-bold text-primary position-relative d-inline-block pe-3 mb-2 fs-3 fs-lg-1">30,000 
+                  <span class="fw-bold position-absolute top-0 start-100 translate-middle fs-4">+</span>
+                  </h3>
+                </div>
+                
+                <p class="fw-bold text-primary-80 fs-lg-6">旅人五星好評</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-black rounded-pill p-4 w-100 d-lg-none d-flex justify-content-between align-items-center">
+              <p class="text-white ps-3 mb-0 fw-bold">立即探索我們的精心旅程</p>
+              <img src="/assets/images/r-arrow-circle.svg" class="r-arrow-circle" alt="">
+            </a>
+
+            
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerGroup: 1,   // 每個 slide 間距，可依需求調整
+          loop: true,         // 開啟循環
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            0: {            // 手機
+              slidesPerView: 1.2,
+              spaceBetween: 24,
+            },
+            576: {          // 小平板
+              slidesPerView: 2,
+              spaceBetween: 16,
+            },
+            992: {          // 桌面
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          }
+        });
+      </script>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,257 @@
+// html{
+//     scroll-timeline-name: --page-scroll; 
+//     scroll-timeline-axis: block; 
+// }
+
+
+
+// .navbar{
+//     animation: navbar-background-change forwards;
+//     animation-timeline: --page-scroll; /* 將動畫綁定到 --page-scroll 滾動時間軸 */
+//     animation-range: 0px 300px; /* 動畫由頂部 0px 往下滾動 80px 後完成 */
+// }
+
+// @keyframes navbar-background-change {
+//     from {
+//         /* 0% 狀態 */
+//         background-color: transparent;
+//     }
+//     to {
+//         /* 100% 狀態 */
+//         background-color: rgba(255, 255, 255, 0.765);
+//         backdrop-filter: blur(5px);
+//     }
+// }
+
+
+.banner{
+  background-image: url(/assets/images/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-top: 112px;
+}
+
+
+.recommend{
+  background-color: #221F1E;
+
+  .card{
+    width: 277px;
+  }
+}
+
+.deco-text{
+  top: 55%;
+  left: 6%;
+  z-index: 1;
+}
+
+.travel-map{
+  background-color: $primary-10;
+  clip-path: polygon(0% 5%, 100% 0, 100% 96%, 0 100%);
+}
+
+.travel-map .nav-pills .nav-link {
+  background-color: $white;
+  color: $primary;
+}
+.travel-map .nav-pills .nav-link.active {
+  background-color:  $primary;
+  color: $white;
+}
+.travel-map{
+  .r-arrow-circle{
+    width: 32px;
+  }
+  .card{
+    width: 312px;
+    .map-card-img{
+      height: 200px;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 100px;
+    color: #dfd2cd;
+    font-weight: normal;
+    top: -40px;
+    left: 13px;
+    z-index: 10;
+}
+
+.title-height{
+  height: 2.4em;
+}
+
+.heart-bg{
+  width: 56px;
+  height: 56px;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  backdrop-filter: blur(12px);  
+  border-radius: 0 20px 0 20px ;
+}
+
+
+
+
+
+
+.swiper-button{
+  &-next,&-prev{
+    span {
+    color: #000;
+    }
+    &::after{
+      content: none;
+    }
+  }
+  &-next{
+    right:-70px;
+  }
+  &-prev{
+    left: -95px;
+  }
+
+  
+}
+
+.hashtag{
+  width: 52px;
+  z-index: -10;
+  top: -30px;
+  left: -5px;
+}
+
+.choose-area{
+  .bgcircle1{
+    top:-300px;
+    left:-200px;
+    z-index: 2;
+  }
+  .bgline{
+    top:50%;
+    left: -50px;
+  }
+  .bgcircle2{
+    bottom: -490px;
+    right: 200px;
+  }
+}
+.choose{
+  background-color: rgba(243, 238, 236, 0.5);
+  backdrop-filter: blur(8px);
+  
+}
+
+
+
+.marquee-anime{
+  animation-name: marquee;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  img{
+    height: 38px;
+    width: auto;
+  }
+}
+
+@keyframes marquee{
+  0%{
+    transform: translateX(-30%);
+  }
+  100%{
+    transform: translateX(4%);
+  }
+}
+
+
+
+
+
+
+@include size-lg{
+  .hashtag{
+    width: 120px;
+    top: -50px;
+    left: -50px;
+  }
+  .small-card{
+    width: 300px;
+  }
+  .card .w-lg-300px{
+    width: 300px; 
+  }
+  .card .w-lg-366px{
+    width: 366px;
+  }
+  .card .h-lg-100{
+    height: 100% !important;
+  }
+  .banner{
+    padding-top: 300px;
+  }
+  .banner-search{
+    max-width: 720px;
+  }
+  .recommend .card{
+    width: 65%;
+    max-width: 416px;
+    height: 600px;
+    transition: width 0.5s ;
+    .btn{
+      opacity: 0;
+      height: 0;
+      transition: all 0.5s;
+    }
+
+    &:hover{
+      width: 100%;
+
+
+      .btn{
+        opacity: 1;
+        height: 64px;
+        }
+    }
+  }
+  .hot-topics{
+    background-image: url(/assets/images/deco-bg.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .offset-row{
+    transform: translateX(80px);
+  }
+  .travel-map .card {
+    width: 746px;
+
+  }
+    .poppins{
+      font-size: 200px;
+      top: -100px;
+      left: 13px;
+  }
+  .me-lose-12{
+    margin-right: auto;
+  }
+  .marquee-anime{
+    img{
+      height: auto;
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,110 @@
+<nav class="navbar bg-white py-3 py-lg-4 fixed-top  ">
+    <div class="container position-relative">
+        <div class="d-flex me-auto">
+            <a class="navbar-brand p-0 me-6" href="index.html">
+                <img src="/assets/images/logo.svg" alt="logo">
+            </a>
+            <form  class="position-relative d-none d-lg-block">
+                <img src="/assets/images/search-light-icon.svg" class="position-absolute top-50 start-0 translate-middle-y  pe-1 ps-3" alt="search-icon">
+                <input type="search" class="form-control rounded-3 py-2 ps-10 navbar-lg-search" id="navbar-lg-search" placeholder="搜尋景點、地點或城市">
+            </form>
+        </div>
+        
+
+        <!-- 搜尋按鈕點擊後，展開的內容 -->
+        <div class="position-absolute start-0 end-0 z-1 bg-white px-3">
+            <div class="collapse " id="collapseExample">
+                <div class="d-flex">
+                    <form  class="position-relative w-100  ">
+                        <img src="/assets/images/search-light-icon.svg" class="position-absolute top-50 start-0 translate-middle-y  pe-1 ps-3" alt="">
+                        <input type="search" class="form-control rounded-3 py-2 ps-10" id="exampleFormControlInput1" placeholder="搜尋景點、地點或城市">
+                    </form>
+                    <button type="button" class="btn p-2 border-0 " data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                        <img src="/assets/images/close-icon.svg" alt="close-icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 搜尋的按鈕 -->
+        <button type="button" class="btn py-2 border-0 d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapseExample" >
+            <img src="/assets/images/search-icon.svg"  alt="search-icon">
+        </button>
+
+        <a href="cart.html" class="btn border-0 py-2 me-lg-4">
+            <span class="position-relative"> 
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle  bg-alert cart-tag p-0">
+                2
+                <span class="visually-hidden">unread messages</span>
+            </span>
+            
+            <img src="/assets/images/cart-icon.svg"  alt="cart-icon">
+        </a>
+
+        <!-- PC版，會員區塊 -->
+        <!-- <div class="d-none d-lg-block" >
+            <a href="#" class="btn bg-primary text-white btn-default ">登入 / 註冊</a>
+        </div> -->
+
+        <div class="d-none d-lg-block">
+            <a href="user.html" class="btn d-flex">
+                <img src="/assets/images/avatar-1.png" class="navbar-user-img me-2" alt="個人頭像">
+                <p class="text-primary fw-bold py-1">Jessica</p>
+            </a>
+        </div>
+
+        <div class="d-lg-none">
+            <button class="btn border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="">
+                <img src="/assets/images/hamburger-icon.svg" alt="漢堡選單icon">
+            </span>
+            </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body py-0 px-6 pb-6">
+            <div class="d-flex flex-column h-100">
+                <a href="user.html" class="d-flex gap-2 pb-4 border-bottom">
+                    <div>
+                        <img src="/assets/images/avatar-1.png" class="navbar-user-img py-2" alt="個人頭像">
+                    </div>
+                    <div>
+                        <h5 class="fs-7 text-neutral-80">Jessica</h5>
+                        <p class="text-neutral-80">jessica.yen@gamil.com</p>
+                    </div>
+                </a>
+                <ul class="navbar-nav py-4 ">
+
+                    <li class="nav-item py-3 " >
+                        <a href="user.html" class="">
+                            <img src="/assets/images/list-icon.svg" alt="list-icon">
+                            <p class="d-inline align-middle">訂單管理</p>
+                        </a>
+                    </li>
+                    <li class="nav-item py-3" >
+                        <a href="user.html" class="">
+                            <img src="/assets/images/heart-icon.svg" alt="heart-icon">
+                            <p class="d-inline align-middle">我的收藏</p>
+                        </a>
+                    </li>
+                    <li class="nav-item py-3" >
+                        <a href="user.html" class="">
+                            <img src="/assets/images/setting-icon.svg" alt="setting-icon">
+                            <p class="d-inline align-middle">帳號設定</p>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <div class="mt-auto ">
+                    <button class="btn py-3 border-0" type="button">
+                        <img src="/assets/images/logout-icon.svg" alt="logout-icon">
+                        <p class="d-inline align-middle">登出</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

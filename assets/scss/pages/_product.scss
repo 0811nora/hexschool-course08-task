@@ -1,0 +1,131 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    color: $neutral-60;
+    padding-left: 8px;
+    padding-right: 12px;
+}
+
+.air-datepicker{
+    border-radius: 20px;
+}
+
+.air-datepicker-body--day-name {
+    color: $neutral-80;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $primary;
+}
+
+.border-s-e{
+    border-left: 1px solid $neutral-60;
+    border-right: 1px solid $neutral-60;
+}
+
+.air-datepicker {
+    width: 100%;
+    font-size: 16px;
+}
+
+.air-datepicker .air-datepicker-nav,
+.datepicker .datepicker--nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 16px;
+}
+
+/* 2) 標題在最左 */
+.air-datepicker-nav--title,
+.datepicker--nav-title {
+    order: 1;
+    font-size: 20px;
+    font-weight: 700;
+    color: $black;
+}
+
+/* 3) 把 prev 推到最右（帶著 next 一起過去） */
+.air-datepicker-nav--action[data-action="prev"],
+.datepicker--nav-action[data-action="prev"] {
+    order: 2;
+    margin-left: auto; /* 關鍵：把後面的兄弟一起擠到右側 */
+}
+
+/* 4) next 排在 prev 右邊，留點距離 */
+.air-datepicker-nav--action[data-action="next"],
+.datepicker--nav-action[data-action="next"] {
+    order: 3;
+    margin-left: 4px;
+}
+
+
+.air-datepicker-cell.-day-.-current- {
+    color: $black;       
+    font-weight: bold;    
+    border-radius: 12px; 
+}
+
+.air-datepicker-cell.-day-.-selected- {
+    background-color: $primary-10;
+    color: $black;          
+    font-weight: bold;
+    border-radius: 10px;  
+}
+
+
+
+.air-datepicker-body--cells.-days- {
+    grid-template-columns: repeat(7, var(--adp-day-cell-width));
+    grid-auto-rows: 60px;
+}
+
+
+.air-datepicker-cell.-day-:hover {
+    background: $primary-10;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.air-datepicker-cell.-day-.-disabled- {
+    color: #999;                 /* 淡灰字 */
+    text-decoration: line-through; /* 加刪除線 */
+    cursor: not-allowed;
+}
+
+.air-datepicker-cell.-day-.-disabled-:hover {
+    background: transparent !important; /* 移除背景 */
+
+}
+
+
+.air-datepicker-cell .-day- .-weekend-{
+    padding: 10px;
+    margin: 10px;
+}
+
+.title-bg{
+    top: 0px;
+    left: 3px;
+    color:hwb(0 58% 22% / 0.419);
+}
+
+
+
+
+.accordion-upwards .accordion-item {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+// .see-more{
+//     background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 51%,rgba(255,255,255,1) 100%); 
+//     height: 256px;
+//     top: 0;
+//     left: 0;
+// }
+
+.see-more{
+    background: linear-gradient(to top,  rgba(255,255,255,1) 0%,rgba(255, 255, 255, 0.079) 100%);
+
+    height: 256px;
+    top: -280px;
+    left: 0;
+}

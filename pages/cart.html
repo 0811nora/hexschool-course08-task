@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>ZOBAA! 旅遊</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="pt-13">
+
+      <!-- 結帳明細 -->
+      <section class="py-lg-13 py-10 bg-neutral-15">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8  pe-lg-6">
+
+              <!-- 全選 -->
+              <div class="card rounded-6 border border-neutral-40 mb-lg-10 mb-6 py-4 px-6">
+                <div class="card-body d-flex justify-content-between align-items-center p-0">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="all-check" checked>
+                    <label class="form-check-label ms-2 align-middle" for="all-check">
+                      全選
+                    </label>
+                  </div>
+                  <button type="button" class="btn btn-outline-primary btn-default">刪除選中活動</button>
+                </div>
+              </div>
+
+
+              <!-- 商品 1-->
+              <div class="card rounded-6 border border-neutral-40 p-0 mb-6">
+                <div class="card-body d-flex justify-content-between align-items-center py-lg-8 px-lg-6">
+                  <div class="form-check w-100 d-flex flex-column flex-lg-row">
+                    <input class="form-check-input mb-4 mb-lg-0" type="checkbox" value="" id="produst-check1" checked>
+                    <label class="form-check-label ms-lg-6 align-middle w-lg-100 ms-minus-24" for="produst-check1">
+                      <div class="d-lg-flex justify-content-between align-items-center">
+                        <div class="d-lg-flex gap-3 align-items-center ">
+                          <div class="mb-3 mb-lg-0 ">
+                            <img src="/assets/images/cart-1.png" class="rounded-5" alt="">
+                          </div>
+                          <div class="mb-6 mb-lg-0">
+                            <h4 class="fw-bold fs-6  mb-2">海闊天空展望台門票 HARUKAS 300</h4>
+                            <p class="text-neutral-80 mb-2 mb-lg-0">阿倍野展望台門票 HARUKAS 300｜附章魚燒兌換劵</p>
+                            <p class="text-neutral-80">兌換期內皆適用</p>
+                          </div>
+                        </div>
+
+                        <div class="me-lg-7">
+                          <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">-</button>
+                          <span class="px-7 fw-bold fs-6">2</span>
+                          <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">+</button>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="border-top ps-lg-11">
+                  <div class="card-body ">
+                    <div class="d-flex justify-content-between">
+                      <div class="">
+                        <a href="" class="btn p-0 text-neutral-80 border-0 text-decoration-underline me-lg-10 me-6">編輯</a>
+                        <a href="" class="btn p-0 text-neutral-80 border-0 text-decoration-underline">刪除</a>
+                      </div>
+                      <p class="pe-lg-4 fw-bold fs-5">NT$ 830</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <!-- 商品 2-->
+              <div class="card rounded-6 border border-neutral-40 p-0 mb-6">
+                <div class="card-body d-flex justify-content-between align-items-center py-lg-8 px-lg-6">
+                  <div class="form-check w-100 d-flex flex-column flex-lg-row">
+                    <input class="form-check-input mb-4 mb-lg-0" type="checkbox" value="" id="produst-check2" checked>
+                    <label class="form-check-label ms-lg-6 align-middle w-lg-100 ms-minus-24" for="produst-check2">
+                      <div class="d-lg-flex justify-content-between align-items-center">
+                        <div class="d-lg-flex gap-3 align-items-center ">
+                          <div class="mb-3 mb-lg-0 ">
+                            <img src="/assets/images/cart-2.png" class="rounded-5" alt="">
+                          </div>
+                          <div class="mb-6 mb-lg-0">
+                            <h4 class="fw-bold fs-6  mb-2">泰式按摩過猛求生體驗</h4>
+                            <p class="text-neutral-80 mb-2 mb-lg-0">限量脫骨套餐｜師傅強度隨緣，靈魂有機會先離開</p>
+                            <p class="text-neutral-80">兌換期內皆適用</p>
+                          </div>
+                        </div>
+
+                        <div class="me-lg-7">
+                          <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">-</button>
+                          <span class="px-7 fw-bold fs-6">2</span>
+                          <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">+</button>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="border-top ps-lg-11">
+                  <div class="card-body ">
+                    <div class="d-flex justify-content-between">
+                      <div class="">
+                        <a href="" class="btn p-0 text-neutral-80 border-0 text-decoration-underline me-lg-10 me-6">編輯</a>
+                        <a href="" class="btn p-0 text-neutral-80 border-0 text-decoration-underline">刪除</a>
+                      </div>
+                      <p class="pe-lg-4 fw-bold fs-5">NT$ 1,230</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <!-- 商品 3-->
+              <div class="card rounded-6 border border-neutral-40 p-0 mb-6">
+                <div class="card-body d-flex justify-content-between align-items-center py-lg-8 px-lg-6">
+                  <div class="form-check w-100 d-flex flex-column flex-lg-row">
+                    <input class="form-check-input mb-4 mb-lg-0" type="checkbox" value="" id="produst-check3" checked>
+                    <label class="form-check-label ms-lg-6 align-middle w-lg-100 ms-minus-24" for="produst-check3">
+                      <div class="d-lg-flex justify-content-between align-items-center">
+                        <div class="d-lg-flex gap-3 align-items-center ">
+                          <div class="mb-3 mb-lg-0 ">
+                            <img src="/assets/images/cart-3.png" class="rounded-5" alt="">
+                          </div>
+                          <div class="mb-6 mb-lg-0">
+                            <h4 class="fw-bold fs-6  mb-2">海闊天空展望台門票 HARUKAS 300</h4>
+                            <p class="text-neutral-80 mb-2 mb-lg-0">阿倍野展望台門票</p>
+                            <p class="text-neutral-80">兌換期內皆適用</p>
+                          </div>
+                        </div>
+
+                        <div class="me-lg-7">
+                          <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">-</button>
+                          <span class="px-7 fw-bold fs-6">1</span>
+                          <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">+</button>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="border-top ps-lg-11">
+                  <div class="card-body ">
+                    <div class="d-flex justify-content-between">
+                      <div class="">
+                        <a href="" class="btn p-0 text-neutral-80 border-0 text-decoration-underline me-lg-10 me-6">編輯</a>
+                        <a href="" class="btn p-0 text-neutral-80 border-0 text-decoration-underline">刪除</a>
+                      </div>
+                      <p class="pe-lg-4 fw-bold fs-5">NT$ 410</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+
+            </div>
+
+            <!-- 總價格 -->
+            <div class="col-lg-4 d-none d-lg-block">
+
+              <div class="card shadow-sm border-0 rounded-6">
+                <div class="card-body p-6">
+                  <h4 class="fs-6 mb-8">費用明細</h4>
+                  <div class="text-neutral-80 pb-8 border-bottom">
+                    <div class="d-flex justify-content-between mb-3 ">
+                      <p>商品小計</p>
+                      <p class="fw-bold">NT$ 3600</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p>優惠折抵</p>
+                      <p class="text-primary-60">- 100</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between py-8 align-items-center">
+                    <p>總計</p>
+                    <p class="fw-bold fs-3">NT$ 3,500</p>
+                  </div>
+                  <button type="button" class="btn btn-primary w-100 py-4 rounded-4">前往結賬</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 其他人也買 -->
+      <section class="py-lg-13 py-10 bg-neutral-15">
+        <div class="container">
+          <div class="mb-lg-10 mb-4 position-relative">
+            <h2 class="fs-3 fs-lg-1 text-primary"># 其他旅人也買了</h2>
+          </div>
+
+          <div class="position-relative ">
+            <div class="swiper mySwiper me-lose-12">
+              <div class="swiper-wrapper ">
+                <!-- 參考行程1 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 bg-neutral-15">
+                      <div class="position-relative">
+                        <img src="/assets/images/top-1.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">環球影城超值一日遊｜哈利波特園區＋快速通關體驗</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">即買即用</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">5 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.8 <span class="text-neutral-60">(1029)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">1,000+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 5,480</p>
+                          <del class="text-neutral-60">NT$ 6,200</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程2 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 bg-neutral-15">
+                    <div class="position-relative">
+                      <img src="/assets/images/top-2.png" class="card-img-top rounded-6" alt="...">
+                    </div>
+                    <div class="position-absolute top-0 end-0  heart-bg">
+                      <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                    </div>
+                    
+                    <div class="card-body px-0">
+                      <h5 class="mb-2 fw-bold fs-lg-7 title-height">奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行</h5>
+                      <div class="mb-2">
+                        <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">中文導覽</span>
+                        <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">7 天前可免費取消</span>
+                      </div>
+                      <div class="pb-4 border-bottom">
+                        <span class="text-neutral-80">
+                          <img src="/assets/images/star-yellow-icon.svg" alt="">
+                          <span class="pe-3 ">4.7 <span class="text-neutral-60">(880)</span></span>
+                        </span>
+                        <span class="ps-3 border-start">900+ 個已訂購</span>
+                      </div>
+                      <div class="pt-4">
+                        <p class="text-primary fs-6 fw-bold ">NT$ 2,250</p>
+                        <del class="text-neutral-60">NT$ 2,800</del>
+                      </div>
+                    </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程3 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 bg-neutral-15">
+                      <div class="position-relative">
+                        <img src="/assets/images/top-3.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">專業導覽</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">5 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.6 <span class="text-neutral-60">(540)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">700+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 1,580</p>
+                          <del class="text-neutral-60">NT$ 2,500</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程4 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 bg-neutral-15">
+                      <div class="position-relative">
+                        <img src="/assets/images/top-4.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">即買即用</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">7 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.7 <span class="text-neutral-60">(319)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">600+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 6,890</p>
+                          <del class="text-neutral-60">NT$ 8,890</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程1 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 bg-neutral-15">
+                      <div class="position-relative">
+                        <img src="/assets/images/top-1.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">環球影城超值一日遊｜哈利波特園區＋快速通關體驗</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">即買即用</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">5 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.8 <span class="text-neutral-60">(1029)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">1,000+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 5,480</p>
+                          <del class="text-neutral-60">NT$ 6,200</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程2 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 bg-neutral-15">
+                    <div class="position-relative">
+                      <img src="/assets/images/top-2.png" class="card-img-top rounded-6" alt="...">
+                    </div>
+                    <div class="position-absolute top-0 end-0  heart-bg">
+                      <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                    </div>
+                    
+                    <div class="card-body px-0">
+                      <h5 class="mb-2 fw-bold fs-lg-7 title-height">奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行</h5>
+                      <div class="mb-2">
+                        <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">中文導覽</span>
+                        <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">7 天前可免費取消</span>
+                      </div>
+                      <div class="pb-4 border-bottom">
+                        <span class="text-neutral-80">
+                          <img src="/assets/images/star-yellow-icon.svg" alt="">
+                          <span class="pe-3 ">4.7 <span class="text-neutral-60">(880)</span></span>
+                        </span>
+                        <span class="ps-3 border-start">900+ 個已訂購</span>
+                      </div>
+                      <div class="pt-4">
+                        <p class="text-primary fs-6 fw-bold ">NT$ 2,250</p>
+                        <del class="text-neutral-60">NT$ 2,800</del>
+                      </div>
+                    </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程3 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 bg-neutral-15">
+                      <div class="position-relative">
+                        <img src="/assets/images/top-3.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">專業導覽</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">5 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.6 <span class="text-neutral-60">(540)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">700+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 1,580</p>
+                          <del class="text-neutral-60">NT$ 2,500</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 參考行程4 -->
+                <div class="swiper-slide">
+                  <a href="produst.html">
+                    <div class="card border-0 bg-neutral-15">
+                      <div class="position-relative">
+                        <img src="/assets/images/top-4.png" class="card-img-top rounded-6" alt="...">
+                      </div>
+                      <div class="position-absolute top-0 end-0  heart-bg">
+                        <img src="/assets/images/heart-white-icon.svg" class="m-4" alt="">
+                      </div>
+                      
+                      <div class="card-body px-0">
+                        <h5 class="mb-2 fw-bold fs-lg-7 title-height">大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館</h5>
+                        <div class="mb-2">
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary me-2">即買即用</span>
+                          <span class="bg-primary-10 fs-8 rounded-3 py-1 px-2 text-primary">7 天前可免費取消</span>
+                        </div>
+                        <div class="pb-4 border-bottom">
+                          <span class="text-neutral-80">
+                            <img src="/assets/images/star-yellow-icon.svg" alt="">
+                            <span class="pe-3 ">4.7 <span class="text-neutral-60">(319)</span></span>
+                          </span>
+                          <span class="ps-3 border-start">600+ 個已訂購</span>
+                        </div>
+                        <div class="pt-4">
+                          <p class="text-primary fs-6 fw-bold ">NT$ 6,890</p>
+                          <del class="text-neutral-60">NT$ 8,890</del>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+              
+            </div>
+
+            <!-- 輪播箭頭按鈕 -->
+            <div class="swiper-button-next d-none d-lg-block">
+                <span class="material-symbols-outlined align-middle p-4 bg-white shadow rounded-4 ">
+                  arrow_forward
+                </span>
+              </div>
+              <div class="swiper-button-prev d-none d-lg-block">
+                <span class="material-symbols-outlined align-middle p-4 bg-white shadow rounded-4">
+                  arrow_back
+                </span>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 手機版明細展開區 -->
+      <section class="d-lg-none">
+        <button class="btn border-0 w-100 py-3 px-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="text-start">
+                <p class="fs-9 text-neutral-80">展開明細<img class="ms-1" src="/assets/images/up-arrow.svg" alt=""></p>
+                <p class="fs-6 fw-bold">NT$ 3,500</p>
+            </div>
+            <div>
+              <a href="#" type="button" class="btn btn-primary py-2 px-4 rounded-4">前往結賬</a>
+            </div>
+          </div>
+        </button>
+
+        <div class="offcanvas offcanvas-bottom rounded-top" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fs-8" id="offcanvasBottomLabel">費用明細</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <div class="px-4">
+              <div class="text-neutral-80 border-bottom py-6">
+                <div class="d-flex justify-content-between mb-3 ">
+                  <p class="fs-8">商品小計</p>
+                  <p class="fw-bold">NT$ 3,600</p>
+                </div>
+                <div class="d-flex justify-content-between ">
+                  <p class="fs-8">優惠折抵</p>
+                  <p class="text-primary-60">- 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between p-4  align-items-center border-bottom">
+              <p>總計</p>
+              <p class="fw-bold fs-6">NT$ 3,500</p>
+            </div>
+
+
+            <div class="d-flex justify-content-between align-items-center p-4">
+              <div class="text-start" aria-label="Close" data-bs-dismiss="offcanvas">
+                <p class="fs-9 text-neutral-80">收合明細<img class="ms-1" src="/assets/images/down-arroe.svg" alt=""></p>
+                <p class="fs-6 fw-bold">NT$ 3,500</p>
+              </div>
+              <div>
+                <a href="#" type="button" class="btn btn-primary py-2 px-4 rounded-4">前往結賬</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerGroup: 1,   // 每個 slide 間距，可依需求調整
+          loop: true,         // 開啟循環
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            0: {            // 手機
+              slidesPerView: 1.2,
+              spaceBetween: 24,
+            },
+            576: {          // 小平板
+              slidesPerView: 2,
+              spaceBetween: 16,
+            },
+            992: {          // 桌面
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          }
+        });
+      </script>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
+

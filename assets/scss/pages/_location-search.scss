@@ -1,0 +1,30 @@
+.nav-link.nav-style-Dline {
+    color: $neutral-80; 
+    font-weight: normal;
+    margin-bottom: -8px;
+}
+
+
+.nav-link.nav-style-Dline.active {
+    color: $primary;  
+    font-weight: 900;
+    background-color: transparent;
+    position: relative;
+    margin-bottom: -8px;
+
+}
+
+
+
+
+.nav-link.nav-style-Dline.active::after {
+    content: ''; 
+    display: block;
+    width: 60%; 
+    height: 4px; 
+    background-color: $primary;
+    
+    margin: 0 auto;
+    margin-top: 10px;
+
+}

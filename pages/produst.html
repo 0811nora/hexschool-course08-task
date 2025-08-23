@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.css"/>
+    <title>ZOBAA! 旅遊</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="pt-lg-13 pt-10">
+
+      <!-- 方案-主圖區 -->
+      <section class="py-lg-13 py-0 bg-neutral-10">
+
+        <div class="container mb-6">
+
+          <!-- 麵包屑 -->
+          <div class="mb-10 d-none d-lg-block">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                <li class="breadcrumb-item"><a href="#">日本</a></li>
+                <li class="breadcrumb-item"><a href="#">關西</a></li>
+                <li class="breadcrumb-item"><a href="#">大阪</a></li>
+                <li class="breadcrumb-item active text-neutral-60" aria-current="page">阿倍野Harukas300觀覽台</li>
+              </ol>
+            </nav>
+          </div>
+
+          <!-- 主要大照片區 電腦樣式 -->
+          <div class="d-lg-flex rounded-7 overflow-hidden gap-lg-2 position-relative d-none">
+            <div class="w-70">
+              <img src="/assets/images/harukas-1.png" class="w-100 h-100 object-fit-fill" alt="">
+            </div>
+            <div class="w-30">
+              <img src="/assets/images/harukas-2.png" class="w-100 mb-lg-2" alt="">
+              <img src="/assets/images/harukas-3.png" class="w-100" alt="">
+            </div>
+            <button type="button" class="btn btn-default btn-white m-lg-8 position-absolute bottom-0 end-0 z-index-1"  >
+              查看更多
+            </button>
+          </div>
+        </div>
+
+        <!-- 主要大照片區 手機樣式 -->
+        <div class="d-lg-none mb-10">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper h-240px">
+              <div class="swiper-slide ">
+                <img src="/assets/images/harukas-1.png" class="w-100 h-100 object-fit-cover" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/harukas-2.png" class="w-100  h-100 object-fit-cover" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/harukas-3.png" class="w-100  h-100 object-fit-cover" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- 文字區 -->
+        <div class="container ">
+          <div class="row ">
+            <div class="col-lg-8">
+              <div class="bg-primary-10 p-6 rounded-7 h-100">
+                <div class="">
+                  <h2 class="mb-lg-6 fs-5 fs-lg-3 mb-6">阿倍野Harukas300觀覽台
+                    <span class="text-primary ms-lg-2 mt-2">
+                      <button type="button" class="border-0"><img src="/assets/images/heart-icon.svg" alt="heart-icon"></button>
+                      <span class="fs-7 align-middle">收藏</span>
+                    </span>
+                  </h2>
+
+                  <div class="mb-lg-6">
+                    <p class="mb-6">
+                      <span class="pe-3">
+                        <img src="/assets/images/star-yellow-icon.svg" alt="">
+                        <span class="fw-bold">4.8</span>
+                        <span class="text-neutral-60 fs-8">(1029)</span>
+                      </span>
+                      <span class="px-3 border-s-e fs-8">1,000+ 個已訂購</span>
+                      <span class="ps-3 d-block d-lg-inline fs-8 mt-3">
+                        <img src="/assets/images/target-icon.svg" alt="">
+                        <span class="align-middle ">阿倍野 HARUKAS 300 海闊天空展望台</span>
+                      </span>
+                    </p>
+                  </div>
+
+                  <ul>
+                    <li class="text-neutral-80">登上日本最高摩天大樓，從 300 公尺高空飽覽大阪全景，日夜皆美、四季皆宜。</li>
+                    <li class="text-neutral-80">58 樓設有空中庭園與 Sky Garden 餐廳，在都市高處也能享受放鬆綠意與美食饗宴。</li>
+                    <li class="text-neutral-80">60 樓空中迴廊以全景設計打造，無論白天或黃昏，都能盡覽大阪市區與天際線。</li>
+                    <li class="text-neutral-80">園區內集結多間熱門品牌與伴手禮店，提供現場退稅服務，讓你購物更便利。</li>
+                  </ul>
+
+                  <button type="button" class="btn ">查看更多
+                    <span class="material-symbols-outlined align-top ms-2">
+                      keyboard_arrow_right
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-4  d-none d-lg-block">
+              <div class="bg-white p-6 rounded-7 border h-100 d-flex flex-column">
+                <div class="">
+                  <span class="fs-8 text-alert bg-alert-10 py-2 px-3 rounded-3 d-inline-block mb-4 fw-bold">限定優惠 75 折</span>
+                  <h3>NT$ 415</h3>
+                  <del>NT$ 520</del>
+                </div>
+                <a href="#" class="btn py-3 btn-primary w-100 rounded-4 mt-auto">選擇方案
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+
+      </section>
+
+      <!-- 方案選擇區 -->
+      <section class="py-lg-15 py-10 bg-primary-10" >
+        <div class="container">
+          <h2 class="text-primary fs-3 mb-6"># 選擇方案</h2>
+          <div class="accordion " id="accordionExample">
+            <!-- 熱門選擇 -->
+              <div class="accordion-item rounded-6 overflow-hidden mb-6">
+                <div class="overflow-hidden position-relative">
+                  <h3 class="p-6 bg-primary text-primary-10 fs-6">熱門選擇</h3>
+                  <img src="/assets/images/bg-light-井.svg" class="position-absolute title-bg" alt="">
+                </div>
+                <div>
+                  <button class="btn text-start p-lg-6 p-4 w-100 border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="d-lg-flex justify-content-lg-between">
+
+                      <div class="d-lg-flex gap-4">
+
+                        <div class="w-200px mb-4">
+                          <img src="/assets/images/harukas-2.png" class="w-100 rounded-5" alt="">
+                        </div>
+                        
+                        <div>
+                          <div class="w-lg-608px w-100">
+                            <h4 class="mb-4 fs-6">海闊天空展望台門票</h4>
+                              <div class="mb-8">
+                                <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">立即確認</span>
+                                <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">有效期：60 天</span>
+                                <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">出示憑證入場</span>
+                                <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">兌換前可免費取消</span>
+                              </div>
+                          </div>
+                          <ul class="mb-lg-0 ps-4 mb-6">
+                            <li class="fs-8 text-neutral-80">阿倍野展望台門票僅限使用一次，退場後無法再次入場。</li>
+                            <li class="fs-8 text-neutral-80">出發前請再次確認設施是否正常營業，請參考官網。如遇臨時休館，恕不另行通知。</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h4 class="fs-5">NT$ 415</h4>
+                          <del class="text-neutral-60">NT$ 520</del>
+                        </div>
+                        <div class="ms-6">
+                          <a class="btn  btn-outline-primary btn-default">選擇方案</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </button>
+                </div>
+                
+              
+                <div id="collapseOne" class="accordion-collapse collapse rounded-6" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+
+                    <!-- 方案詳情 -->
+                    <div class="py-10 border-bottom">
+                      <h3 class="fs-6 mb-6">方案詳情</h3>
+                      <div class="bg-neutral-40 rounded-5">
+                        <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                          <p class="fs-7 w-lg-20  fw-bold">關於此方案</p>
+                          <p class="w-lg-80 ">
+                            <img src="/assets/images/free-icon.svg" alt="">
+                            <span class="ms-1">免費取消！</span>
+                          </p>
+                        </div>
+
+                        <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                          <p class="fs-7 w-lg-20  fw-bold">費用包含</p>
+                          <p class="w-lg-80 ">
+                            <img src="/assets/images/check-green-icon.svg" alt="">
+                            <span class="ms-1">阿倍野展望台門票 HARUKAS 300</span>
+                          </p>
+                        </div>
+
+                        <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                          <p class="fs-7 w-lg-20  fw-bold">費用不包含</p>
+                          <div class="w-lg-80 ">
+                            <span class="me-8">
+                              <img src="/assets/images/no-icon.svg" alt="">
+                              <span class="ms-1">個人消費</span>
+                            </span>
+                            <span class="">
+                              <img src="/assets/images/no-icon.svg" alt="">
+                              <span class="ms-1">以上未提及消費</span>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                          <p class="fs-7 w-lg-20  fw-bold">取消政策</p>
+                          <p class="w-lg-80 ">
+                            由於站內商品來自全球各地，訂單取消時間將依該供應商所在時區判定。供應商需 2-5 個工作天進行取消流程，依照您購買的商品取消政策收取手續費，並於取消流程完成後14 個工作天內退款。
+                          </p>
+                        </div>
+
+                        <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                          <p class="fs-7 w-lg-20 fw-bold">憑證兌換期限</p>
+                          <p class="w-lg-80">
+                            自開票日算起 60日 之內兌換有效，逾期無效
+                          </p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 方案選擇日期 -->
+                    <div class="py-10 d-flex flex-column flex-lg-row justify-content-lg-between border-bottom mb-10">
+                      <div class="w-lg-45 mb-10 mb-lg-0">
+                        <h3 class="fs-6 mb-6">選擇日期及選項</h3>
+                        <div id="airDatepicker"></div>
+                      </div>
+
+                      <div class="w-lg-45">
+                        <h3 class="fs-6 mb-6">選擇數量</h3>
+                        <div class="d-flex justify-content-between flex-column flex-lg-row">
+                          <p class="fs-6 fw-bold mb-6 mb-lg-0"><span class="text-neutral-80 fs-7 fw-normal me-2">每張</span>NT$ 415</p>
+                        
+                          <div>
+                            <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">-</button>
+                            <span class="px-7 fw-bold fs-6">2</span>
+                            <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">+</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 金額顯示 -->
+                    <div class="d-flex text-end justify-content-lg-end flex-column flex-lg-row">
+                      <div class="me-lg-6 d-flex justify-content-end align-items-center gap-2 mb-2 mb-lg-0">
+                        <p class="text-neutral-80">總金額</p>
+                        <p class="fw-bold fs-5">NT$ 830</p>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <div class="w-50 w-lg-auto ">
+                          <a href="#" class="btn btn-default py-4 btn-primary text-white d-block d-lg-inline-block  text-nowrap">
+                          加入購物車
+                          </a>
+                        </div>
+                        <div class="w-50 w-lg-auto">
+                          <a href="#" class="btn btn-default py-4 btn-primary-60 text-white d-block d-lg-inline-block ">
+                          立即訂購
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- 套裝行程 1-->
+              <div class="accordion-item rounded-6 overflow-hidden mb-6">
+                <div class="overflow-hidden position-relative">
+                  <h3 class="p-6 bg-primary-60 text-primary-10 fs-6">套裝行程</h3>
+                  <img src="/assets/images/bg-light-井.svg" class="position-absolute title-bg" alt="">
+                </div>
+                <div>
+                  <button class="btn text-start p-lg-6 p-4 w-100 border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <div class="d-lg-flex justify-content-lg-between">
+
+                      <div class="d-lg-flex gap-4">
+
+                        <div class="w-200px mb-4">
+                          <img src="/assets/images/site-1.png" class="w-100 rounded-5" alt="">
+                        </div>
+                        
+                        <div class="w-lg-608px">
+                          <div class=" w-100">
+                            <h4 class="mb-4 fs-6">【超值優惠】阿倍野展望台門票 HARUKAS 300 + HARUKA 關西機場→天王寺（單程票）</h4>
+                              <div class="mb-8">
+                                <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">立即確認</span>
+                                <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">有效期：60 天</span>
+                                <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">出示憑證入場</span>
+                                <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">兌換前可免費取消</span>
+                              </div>
+                          </div>
+                          <ul class="mb-lg-0 ps-4 mb-6">
+                            <li class="fs-8 text-neutral-80">HARUKA 關西機場→天王寺（單程票）相關訊息，請參考日本關西機場 KIX 機場快線 HARUKA 車票。</li>
+                            <li class="fs-8 text-neutral-80">阿倍野展望台門票僅限使用一次，退場後無法再次入場。</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between ">
+                        <div>
+                          <h4 class="fs-5">NT$ 522</h4>
+                          <del class="text-neutral-60">NT$ 630</del>
+                        </div>
+                        <div class="ms-6">
+                          <a class="btn  btn-outline-primary btn-default">選擇方案</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </button>
+                </div>
+                
+              
+                <div id="collapseTwo" class="accordion-collapse collapse rounded-6" data-bs-parent="#accordionExample">
+                  <div class="accordion-body ">
+
+                    <!-- 方案詳情 -->
+                    <div class="py-10 border-bottom">
+                      <h3 class="fs-6 mb-6">方案詳情</h3>
+                      <div class="bg-neutral-40 rounded-5">
+                        <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                          <p class="fs-7 w-lg-20  fw-bold">關於此方案</p>
+                          <p class="w-lg-80 ">
+                            <img src="/assets/images/free-icon.svg" alt="">
+                            <span class="ms-1">免費取消！</span>
+                          </p>
+                        </div>
+
+                        <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                          <p class="fs-7 w-lg-20  fw-bold">費用包含</p>
+                          <p class="w-lg-80 ">
+                            <img src="/assets/images/check-green-icon.svg" alt="">
+                            <span class="ms-1">阿倍野展望台門票 HARUKAS 300</span>
+                          </p>
+                        </div>
+
+                        <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                          <p class="fs-7 w-lg-20  fw-bold">費用不包含</p>
+                          <div class="w-lg-80 ">
+                            <span class="me-8">
+                              <img src="/assets/images/no-icon.svg" alt="">
+                              <span class="ms-1">個人消費</span>
+                            </span>
+                            <span class="">
+                              <img src="/assets/images/no-icon.svg" alt="">
+                              <span class="ms-1">以上未提及消費</span>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                          <p class="fs-7 w-lg-20  fw-bold">取消政策</p>
+                          <p class="w-lg-80 ">
+                            由於站內商品來自全球各地，訂單取消時間將依該供應商所在時區判定。供應商需 2-5 個工作天進行取消流程，依照您購買的商品取消政策收取手續費，並於取消流程完成後14 個工作天內退款。
+                          </p>
+                        </div>
+
+                        <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                          <p class="fs-7 w-lg-20 fw-bold">憑證兌換期限</p>
+                          <p class="w-lg-80">
+                            自開票日算起 60日 之內兌換有效，逾期無效
+                          </p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 方案選擇日期 -->
+                    <div class="py-10 d-flex flex-column flex-lg-row justify-content-lg-between border-bottom mb-10">
+                      <div class="w-lg-45 mb-10 mb-lg-0">
+                        <h3 class="fs-6 mb-6">選擇日期及選項</h3>
+                        <div id="airDatepicker"></div>
+                      </div>
+
+                      <div class="w-lg-45">
+                        <h3 class="fs-6 mb-6">選擇數量</h3>
+                        <div class="d-flex justify-content-between flex-column flex-lg-row">
+                          <p class="fs-6 fw-bold mb-6 mb-lg-0"><span class="text-neutral-80 fs-7 fw-normal me-2">每張</span>NT$ 415</p>
+                        
+                          <div>
+                            <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">-</button>
+                            <span class="px-7 fw-bold fs-6">2</span>
+                            <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">+</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 金額顯示 -->
+                    <div class="d-flex text-end justify-content-lg-end flex-column flex-lg-row">
+                      <div class="me-lg-6 d-flex justify-content-end align-items-center gap-2 mb-2 mb-lg-0">
+                        <p class="text-neutral-80">總金額</p>
+                        <p class="fw-bold fs-5">NT$ 830</p>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <div class="w-50 w-lg-auto ">
+                          <a href="#" class="btn btn-default py-4 btn-primary text-white d-block d-lg-inline-block  text-nowrap">
+                          加入購物車
+                          </a>
+                        </div>
+                        <div class="w-50 w-lg-auto">
+                          <a href="#" class="btn btn-default py-4 btn-primary-60 text-white d-block d-lg-inline-block ">
+                          立即訂購
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- 套裝行程 2-->
+              <div class="accordion-item rounded-6 overflow-hidden">
+                <button class="btn text-start p-lg-6 p-4 w-100 border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  <div class="d-lg-flex justify-content-lg-between">
+
+                    <div class="d-lg-flex gap-4 ">
+
+                      <div class="w-200px mb-4">
+                        <img src="/assets/images/site-2.png" class="w-100 rounded-5" alt="">
+                      </div>
+                      
+                      <div class="bg-white w-lg-608px">
+                        <div class=" w-100">
+                          <h4 class="mb-4 fs-6">阿倍野展望台門票 HARUKAS 300｜附章魚燒兌換劵）</h4>
+                            <div class="mb-8">
+                              <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">立即確認</span>
+                              <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">有效期：60 天</span>
+                              <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">出示憑證入場</span>
+                              <span class="fs-8 text-neutral-80 bg-neutral-40 py-1 px-2 rounded-3 me-2 d-inline-block mb-2 mb-lg-0">兌換前可免費取消</span>
+                            </div>
+                        </div>
+                        <ul class="mb-lg-0 ps-4 mb-6">
+                          <li class="fs-8 text-neutral-80">請於使用當天前往阿倍野HARUKAS300展望台16樓服務台出示QRcodode掃碼領取展望台入場劵及章魚燒兌換劵。</li>
+                          <li class="fs-8 text-neutral-80">58樓餐廳不開放預訂座位及選位，使用當天有可能因用餐人數眾多而沒有位置，敬請見諒。</li>
+                          <li class="fs-8 text-neutral-80">工作人員會隨機選章魚燒提供給客人。無法自由選擇。敬請見諒。</li>
+                          <li class="fs-8 text-neutral-80">章魚燒請於指定出發日當天兌換，逾期無效。</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between ">
+                      <div>
+                        <h4 class="fs-5">NT$ 478</h4>
+                        <del class="text-neutral-60">NT$ 630</del>
+                      </div>
+                      <div class="ms-6">
+                        <a class="btn  btn-outline-primary btn-default">選擇方案</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </button>
+
+              
+            
+              <div id="collapseThree" class="accordion-collapse collapse rounded-6" data-bs-parent="#accordionExample">
+                <div class="accordion-body bg-white">
+
+                  <!-- 方案詳情 -->
+                  <div class="py-10 border-bottom">
+                    <h3 class="fs-6 mb-6">方案詳情</h3>
+                    <div class="bg-neutral-40 rounded-5">
+                      <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                        <p class="fs-7 w-lg-20  fw-bold">關於此方案</p>
+                        <p class="w-lg-80 ">
+                          <img src="/assets/images/free-icon.svg" alt="">
+                          <span class="ms-1">免費取消！</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                        <p class="fs-7 w-lg-20  fw-bold">費用包含</p>
+                        <p class="w-lg-80 ">
+                          <img src="/assets/images/check-green-icon.svg" alt="">
+                          <span class="ms-1">阿倍野展望台門票 HARUKAS 300</span>
+                        </p>
+                      </div>
+
+                      <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                        <p class="fs-7 w-lg-20  fw-bold">費用不包含</p>
+                        <div class="w-lg-80 ">
+                          <span class="me-8">
+                            <img src="/assets/images/no-icon.svg" alt="">
+                            <span class="ms-1">個人消費</span>
+                          </span>
+                          <span class="">
+                            <img src="/assets/images/no-icon.svg" alt="">
+                            <span class="ms-1">以上未提及消費</span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                        <p class="fs-7 w-lg-20  fw-bold">取消政策</p>
+                        <p class="w-lg-80 ">
+                          由於站內商品來自全球各地，訂單取消時間將依該供應商所在時區判定。供應商需 2-5 個工作天進行取消流程，依照您購買的商品取消政策收取手續費，並於取消流程完成後14 個工作天內退款。
+                        </p>
+                      </div>
+
+                      <div class="d-flex p-4 border-bottom flex-column flex-lg-row gap-4 gap-lg-0">
+                        <p class="fs-7 w-lg-20 fw-bold">憑證兌換期限</p>
+                        <p class="w-lg-80">
+                          自開票日算起 60日 之內兌換有效，逾期無效
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- 方案選擇日期 -->
+                  <div class="py-10 d-flex flex-column flex-lg-row justify-content-lg-between border-bottom mb-10">
+                    <div class="w-lg-45 mb-10 mb-lg-0">
+                      <h3 class="fs-6 mb-6">選擇日期及選項</h3>
+                      <div id="airDatepicker"></div>
+                    </div>
+
+                    <div class="w-lg-45">
+                      <h3 class="fs-6 mb-6">選擇數量</h3>
+                      <div class="d-flex justify-content-between flex-column flex-lg-row">
+                        <p class="fs-6 fw-bold mb-6 mb-lg-0"><span class="text-neutral-80 fs-7 fw-normal me-2">每張</span>NT$ 415</p>
+                      
+                        <div>
+                          <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">-</button>
+                          <span class="px-7 fw-bold fs-6">2</span>
+                          <button type="button" class="btn btn-white py-2 px-4 border rounded-circle">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 金額顯示 -->
+                  <div class="d-flex text-end justify-content-lg-end flex-column flex-lg-row">
+                    <div class="me-lg-6 d-flex justify-content-end align-items-center gap-2 mb-2 mb-lg-0">
+                      <p class="text-neutral-80">總金額</p>
+                      <p class="fw-bold fs-5">NT$ 830</p>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <div class="w-50 w-lg-auto ">
+                        <a href="#" class="btn btn-default py-4 btn-primary text-white d-block d-lg-inline-block  text-nowrap">
+                        加入購物車
+                        </a>
+                      </div>
+                      <div class="w-50 w-lg-auto">
+                        <a href="#" class="btn btn-default py-4 btn-primary-60 text-white d-block d-lg-inline-block ">
+                        立即訂購
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 商品說明 -->
+      <section class="py-lg-15 py-10">
+        <div class="container position-relative">
+          <div class="row justify-content-between">
+
+            <div class="col-lg-9" >
+
+              <!-- 商品說明 -->
+              <div id="product-desc" class=" mb-10 pb-10 border-bottom">
+                <h2 class="fs-3 fw-bold text-primary mb-6"># 商品說明</h2>
+                <div>
+                  <div>
+                    <div class="text-neutral-80 mb-6">
+                      <h4 class="fs-7 fw-normal">－ 景點介紹 －</h4>
+                      <ul>
+                        <li>
+                          阿倍野 HARUKAS <br>阿倍野 HARUKAS 是 2014 年 3 月 7 日正式開幕的大阪必去新地標，集結了商城、飯店、美術館與展望台等多元功能，欣賞美景之餘還可購物、享受美食。阿倍野 60 樓 360 度的空中迴廊，以落地鋼化玻璃包圍展望台四周，若天候條件較佳，還可將京都到六甲山脈、明石海峽大橋到淡路島、生駒山脈，以及關西國際機場等廣大景色一覽無遺。此外，特別推薦夜晚限定的燈光音樂秀，當燈光與音樂在夜晚的空中庭園與空中走廊之間交錯，絕對是一場難得的感官饗宴！
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="text-neutral-80 mb-6 d-none d-lg-block">
+                      <h4 class="fs-7 fw-normal">－ 阿倍野美術館 展覽介紹 －</h4>
+                      <ul>
+                        <li>
+                          幻想旅行導遊：尚-米歇爾·福隆
+                        </li>
+                        <li>
+                          展覽期間：2025年4月5日（六）～2025年6月22日（日）
+                        </li>
+                        <li>
+                          尚-米歇爾·福隆（Jean-Michel Folon，1934-2005）是一位來自比利時的獨特藝術家。他的作品既詩意盎然又充滿幽默感，透過柔和的色彩與輕盈的筆觸，帶領觀眾踏上一場奇幻之旅，並傳遞對這個世界各種現象的深刻啟發，充滿豐富的情感與訊息。 為了紀念福隆逝世20週年，以及他生前創立的「福隆基金會」成立25週年，本次展覽將展出約230件多樣的作品，包括繪畫、雕塑、海報等，向大家展現福隆溫暖且深邃的藝術魅力。
+                        </li>
+                      </ul>
+                      <p class="mb-6">從 60 樓的觀景樓層，俯瞰 360 度充滿活力的大阪</p>
+
+                      <div>
+                        <img src="/assets/images/harukas-4.png"  class="w-100 rounded-6">
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- 展開更多 -->
+                  <div class="position-relative">
+                    
+                    <div class="accordion accordion-upwards" id="accordionExample">
+                      <div class="accordion-item border-0 text-center ">
+                        <h2 class="accordion-header" id="heading-z">
+                          <div>
+                            <div class="w-100 see-more position-absolute"></div>
+                            <button class="btn btn-primary py-4 px-14 rounded-4 z-index-1 see-more-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-z" aria-expanded="true" aria-controls="collapse-z">
+                            展開更多
+                            </button>
+                          </div>
+                          
+                        </h2>
+                        <div id="collapse-z" class="accordion-collapse collapse" aria-labelledby="heading-z" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur fugiat architecto nam autem quibusdam. Ratione quo soluta quas consequatur, maiores atque quia quibusdam sint asperiores? Ut qui adipisci odio nam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vel nisi deserunt necessitatibus! Illum minima commodi provident facilis at voluptate vel! Cum tempora atque eveniet doloremque sed pariatur, reprehenderit veritatis.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi assumenda deserunt, velit doloribus maxime soluta numquam ea autem repellat, eligendi cum beatae quam dolor odit fugit ullam vel fuga perferendis.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui totam soluta sed minima incidunt nulla, perferendis distinctio quo, quia provident consectetur voluptas sunt? Eos pariatur, hic cumque accusantium ullam modi.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque neque sapiente quam expedita ducimus quia sunt dolore in eum voluptate nihil, iste tempore vel corrupti minima. Voluptates culpa consectetur nisi.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
+              <!-- 如何使用 -->
+              <div id="how-to-use" class="mb-10 pb-10 border-bottom">
+                <h2 class="fs-3 fw-bold text-primary mb-6"># 如何使用</h2>
+                  <div>
+                    <h4 class=" mb-6 fs-7">憑證使用方式</h4>
+                    <p class="text-neutral-80">現場請出示 QR code <br>請至阿倍野 HARUKAS 300 展望台 16 樓櫃檯出示電子憑證。</p>
+                  </div>          
+              </div>
+
+              <!-- 旅人評論 -->
+              <div id="user-reviews" class=" ">
+                <h2 class="fs-3 fw-bold text-primary mb-6"># 旅人評論</h2>
+                  <div>
+                    <!-- 評論1 -->
+                    <div class="card rounded-6 border-0 shadow mb-6">
+                      <div class="card-body p-0">
+                        <div class="d-lg-flex gap-lg-6 p-lg-8 p-4">
+                          <div class="w-60px mb-lg-0 mb-6">
+                            <img src="/assets/images/avatar-1 (1).png" class="w-100" alt="">
+                          </div>
+                          <div class="w-100">
+                            <div class="mb-4">
+                              <p >無聊工程師 Brian</p>
+                              <p class="text-neutral-80 fs-8"><img src="/assets/images/star5.svg" alt=""><span class="ms-2">2025-03-24</span></p>
+                            </div>
+                            <div class="bg-neutral-10 rounded-5 w-100 p-4">
+                              <h4 class="fw-semibold fs-7 mb-3">覺得自己像在當鋼鐵人</h4>
+                              <p class="text-neutral-80 ">本來只是想吹吹冷氣看風景，結果一站上去我竟然以為自己是要起飛的鋼鐵人。 <br>全大阪通通收服底，還順便看到前女友住在哪一層，讚。</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    <!-- 評論2 -->
+                    <div class="card rounded-6 border-0 shadow mb-6">
+                      <div class="card-body p-0">
+                        <div class="d-lg-flex gap-lg-6 p-lg-8 p-4 ">
+                          <div class="w-60px mb-lg-0 mb-6">
+                            <img src="/assets/images/avatar-2.png" class="w-100" alt="">
+                          </div>
+                          <div class="w-100">
+                            <div class="mb-4">
+                              <p >愛旅遊的林阿姨</p>
+                              <p class="text-neutral-80 fs-8"><img src="/assets/images/star5.svg" alt=""><span class="ms-2">2025-01-30</span></p>
+                            </div>
+                            <div class="bg-neutral-10 rounded-5 w-100 p-4">
+                              <h4 class="fw-semibold fs-7 mb-3">退休生活安排得剛剛好</h4>
+                              <p class="text-neutral-80 ">以前只有年輕人在打卡，這次我也來插旗！<br> 從 58 樓看風景、60 樓走一圈，還順便在 Sky Garden 吃個甜點，人生沒這麼輕鬆啦！<br> 還有退稅服務耶～貼心！</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    <!-- 評論3 -->
+                    <div class="card rounded-6 border-0 shadow mb-6">
+                      <div class="card-body p-0">
+                        <div class="d-lg-flex gap-lg-6 p-lg-8 p-4">
+                          <div class="w-60px mb-lg-0 mb-6">
+                            <img src="/assets/images/avatar-3.png" class="w-100" alt="">
+                          </div>
+                          <div class="w-100">
+                            <div class="mb-4">
+                              <p >財富對折師阿哲</p>
+                              <p class="text-neutral-80 fs-8"><img src="/assets/images/star5.svg" alt=""><span class="ms-2">2024-05-29</span></p>
+                            </div>
+                            <div class="bg-neutral-10 rounded-5 w-100 p-4">
+                              <h4 class="fw-semibold fs-7 mb-3">第一次帶女友出國，股票先不看了</h4>
+                              <p class="text-neutral-80 ">想不到第一次出國就被女友說「太會安排了吧❤️」 <br> 看完夜景還能順便退稅、吃飯、買禮物，一張票搞定，男人就該這樣做事！</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    <!-- 評論4 -->
+                    <div class="card rounded-6 border-0 shadow mb-6">
+                      <div class="card-body p-0">
+                        <div class="d-lg-flex gap-lg-6 p-lg-8 p-4">
+                          <div class="w-60px mb-lg-0 mb-6">
+                            <img src="/assets/images/avatar-4.png" class="w-100" alt="">
+                          </div>
+                          <div class="w-100">
+                            <div class="mb-4">
+                              <p >麗莎｜帶你玩遍全世界</p>
+                              <p class="text-neutral-80 fs-8"><img src="/assets/images/star5.svg" alt=""><span class="ms-2">2024-04-23</span></p>
+                            </div>
+                            <div class="bg-neutral-10 rounded-5 w-100 p-4">
+                              <h4 class="fw-semibold fs-7 mb-3">IG狂打卡模式啟動</h4>
+                              <p class="text-neutral-80 ">光那個透明玻璃窗我就拍了 30 張，爽度不同凡響 <br>夕陽照下來直接幫我自動磨皮濾鏡，根本不用修圖！</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                  </div>          
+              </div>
+            </div>
+
+
+            <div class="col-1 d-none d-lg-block">
+              <ul class="no-list-style p-0 text-end">
+                <li class="mb-6">
+                  <a href="#product-desc" class="menu-list menu-active ">商品說明</a>
+                </li>
+                <li class="mb-6">
+                  <a href="#how-to-use" class="menu-list">如何使用</a>
+                </li>
+                <li class="mb-6">
+                  <a href="#user-reviews" class="menu-list">旅人評論</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+
+    <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
+
