@@ -35,26 +35,3 @@
     background-color: $primary-10;
 }
 
-// .travelers-card-detail:hover{
-//     display: block;
-// }
-
-// .travelers-card-detail {
-//     display: none;
-// }
-
-// .traveler-item:hover.travelers-card-detail {
-//     display: block;
-// }
-
-.travelers-card-detail {
-    opacity: 0;
-    visibility: hidden;
-
-}
-
-.traveler-item:hover .travelers-card-detail {
-    opacity: 1;
-    visibility: visible;
-}
-
