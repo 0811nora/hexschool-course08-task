@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>ZOBAA! 旅遊</title>
   </head>
   <body>
@@ -34,7 +36,7 @@
           </div>
 
           <!-- 主要大照片區 電腦樣式 -->
-          <div class="d-lg-flex rounded-7 overflow-hidden gap-lg-2 position-relative d-none">
+          <div class="d-lg-flex rounded-7 overflow-hidden gap-lg-2 position-relative d-none" data-aos="zoom-in-up" data-aos-duration="1500">
             <div class="w-70">
               <img src="/assets/images/harukas-1.png" class="w-100 h-100 object-fit-fill" alt="">
             </div>
@@ -49,7 +51,7 @@
         </div>
 
         <!-- 主要大照片區 手機樣式 -->
-        <div class="d-lg-none mb-10">
+        <div class="d-lg-none mb-10" data-aos="zoom-in-up" data-aos-duration="1500">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper h-240px">
               <div class="swiper-slide ">
@@ -67,7 +69,7 @@
         </div>
 
         <!-- 文字區 -->
-        <div class="container ">
+        <div class="container " data-aos="zoom-in-up" data-aos-duration="1500">
           <div class="row ">
             <div class="col-lg-8">
               <div class="bg-primary-10 p-6 rounded-7 h-100">
@@ -135,7 +137,7 @@
           <h2 class="text-primary fs-3 mb-6"># 選擇方案</h2>
           <div class="accordion " id="accordionExample">
             <!-- 熱門選擇 -->
-              <div class="accordion-item rounded-6 overflow-hidden mb-6">
+              <div class="accordion-item rounded-6 overflow-hidden mb-6" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="100">
                 <div class="overflow-hidden position-relative">
                   <h3 class="p-6 bg-primary text-primary-10 fs-6">熱門選擇</h3>
                   <img src="/assets/images/bg-light-井.svg" class="position-absolute title-bg" alt="">
@@ -284,7 +286,7 @@
               </div>
 
               <!-- 套裝行程 1-->
-              <div class="accordion-item rounded-6 overflow-hidden mb-6">
+              <div class="accordion-item rounded-6 overflow-hidden mb-6" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="200">
                 <div class="overflow-hidden position-relative">
                   <h3 class="p-6 bg-primary-60 text-primary-10 fs-6">套裝行程</h3>
                   <img src="/assets/images/bg-light-井.svg" class="position-absolute title-bg" alt="">
@@ -433,7 +435,7 @@
               </div>
 
               <!-- 套裝行程 2-->
-              <div class="accordion-item rounded-6 overflow-hidden">
+              <div class="accordion-item rounded-6 overflow-hidden" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="300">
                 <button class="btn text-start p-lg-6 p-4 w-100 border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                   <div class="d-lg-flex justify-content-lg-between">
 
@@ -791,6 +793,10 @@
     </script>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
 
