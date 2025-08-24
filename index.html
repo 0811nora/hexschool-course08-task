@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>ZOBAA! 旅遊</title>
     <script type="module" crossorigin src="/hexschool-course08-task/assets/main-CZY9_mQV.js"></script>
     <link rel="stylesheet" crossorigin href="/hexschool-course08-task/assets/main-Bby7oimC.css">
@@ -92,13 +93,13 @@
                 <ul class="navbar-nav py-4 ">
 
                     <li class="nav-item py-3 " >
-                        <a href="user.html" class="">
+                        <a href="user.html#order-management" class="">
                             <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17%204H7C5.89543%204%205%204.89543%205%206V19C5%2020.1046%205.89543%2021%207%2021H17C18.1046%2021%2019%2020.1046%2019%2019V6C19%204.89543%2018.1046%204%2017%204Z'%20stroke='%234B4B4B'%20stroke-width='2'/%3e%3cpath%20d='M9%209H15M9%2013H15M9%2017H13'%20stroke='%234B4B4B'%20stroke-width='2'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="list-icon">
                             <p class="d-inline align-middle">訂單管理</p>
                         </a>
                     </li>
                     <li class="nav-item py-3" >
-                        <a href="user.html" class="">
+                        <a href="user.html#my-favorites" class="">
                             <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020.3249C11.7667%2020.3249%2011.5293%2020.2832%2011.288%2020.1999C11.0467%2020.1166%2010.834%2019.9832%2010.65%2019.7999L8.925%2018.2249C7.15833%2016.6082%205.56233%2015.0042%204.137%2013.4129C2.71167%2011.8216%201.99933%2010.0672%202%208.1499C2%206.58324%202.525%205.2749%203.575%204.2249C4.625%203.1749%205.93333%202.6499%207.5%202.6499C8.38333%202.6499%209.21667%202.83724%2010%203.2119C10.7833%203.58657%2011.45%204.09924%2012%204.7499C12.55%204.0999%2013.2167%203.58757%2014%203.2129C14.7833%202.83824%2015.6167%202.65057%2016.5%202.6499C18.0667%202.6499%2019.375%203.1749%2020.425%204.2249C21.475%205.2749%2022%206.58324%2022%208.1499C22%2010.0666%2021.2917%2011.8249%2019.875%2013.4249C18.4583%2015.0249%2016.85%2016.6332%2015.05%2018.2499L13.35%2019.7999C13.1667%2019.9832%2012.9543%2020.1166%2012.713%2020.1999C12.4717%2020.2832%2012.234%2020.3249%2012%2020.3249ZM11.05%206.7499C10.5667%206.06657%2010.05%205.54557%209.5%205.1869C8.95%204.82824%208.28333%204.64924%207.5%204.6499C6.5%204.6499%205.66667%204.98324%205%205.6499C4.33333%206.31657%204%207.1499%204%208.1499C4%209.01657%204.30833%209.93757%204.925%2010.9129C5.54167%2011.8882%206.27933%2012.8339%207.138%2013.7499C7.99667%2014.6659%208.88%2015.5242%209.788%2016.3249C10.696%2017.1256%2011.4333%2017.7839%2012%2018.2999C12.5667%2017.7832%2013.3043%2017.1249%2014.213%2016.3249C15.1217%2015.5249%2016.005%2014.6666%2016.863%2013.7499C17.721%2012.8332%2018.4583%2011.8876%2019.075%2010.9129C19.6917%209.93824%2020%209.01724%2020%208.1499C20%207.1499%2019.6667%206.31657%2019%205.6499C18.3333%204.98324%2017.5%204.6499%2016.5%204.6499C15.7167%204.6499%2015.05%204.82924%2014.5%205.1879C13.95%205.54657%2013.4333%206.06724%2012.95%206.7499C12.8333%206.91657%2012.6917%207.04157%2012.525%207.1249C12.3583%207.20824%2012.1833%207.2499%2012%207.2499C11.8167%207.2499%2011.6417%207.20824%2011.475%207.1249C11.3083%207.04157%2011.1667%206.91657%2011.05%206.7499Z'%20fill='%234B4B4B'/%3e%3c/svg%3e" alt="heart-icon">
                             <p class="d-inline align-middle">我的收藏</p>
                         </a>
@@ -124,12 +125,12 @@
 </nav>
     <main class="index-main">
       <!-- banner區塊 -->
-      <section class="banner">
+      <section class="banner" >
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-10 ">
+            <div class="col-lg-10  " data-aos="zoom-in" data-aos-duration="2500">
               <h3 class="fw-bold text-primary fs-7 fs-lg-6 bg-primary-10 rounded-3 d-inline-block p-2 p-lg-4 mb-3 ">ZOBAA 旅行推薦平台</h2>
-              <h1 class="fw-bold fs-3 fs-lg-2xl text-primary mb-2 mb-lg-6 ">
+              <h1 class="fw-bold fs-3 fs-lg-2xl text-primary mb-2 mb-lg-6 " data-aos="flip-left" data-aos-delay="500" data-aos-duration="1500">
                 <span class="d-block d-lg-inline">用旅行，</span>
                 <span>收藏世界的樣子</span>
               </h1>
@@ -150,7 +151,7 @@
       <section class="recommend py-10 py-lg-15">
         <!-- 推薦區-標題 -->
         <div class="container mb-lg-13 mb-10">
-          <div class="text-white d-lg-flex  flex-lg-row justify-content-lg-between align-items-center mb-ls-13 mb-10">
+          <div class="text-white d-lg-flex  flex-lg-row justify-content-lg-between align-items-center mb-ls-13 mb-10" data-aos="fade-left" data-aos-duration="1500">
             <h2 class="fs-3 fs-lg-2xl fw-bold mb-6">你的<br>專屬推薦</h2>
             <div>
               <p class="fs-8 fs-lg-6 mb-3 mb-lg-6 fw-bold">來看我們的精選推薦行程，滿意度高達 <br>99.2%給自己一個難忘的旅遊行程吧！</p>
@@ -161,7 +162,7 @@
         </div>
 
           <!-- 推薦區-卡片 -->
-        <div class="container d-flex gap-4 gap-lg-6 overflow-x-auto ">
+        <div class="container d-flex gap-4 gap-lg-6 overflow-x-auto " data-aos="fade-right" data-aos-duration="1000">
           <div class="card text-bg-dark rounded-7 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
             <img src="/hexschool-course08-task/assets/recommend-AEVYMS0e.png" class="card-img h-100 object-fit-cover" alt="峇里島">
             <div class="card-img-overlay d-flex flex-column justify-content-end">
@@ -246,8 +247,8 @@
             <div class="col-lg-6 ">
               
               <div class="row ">
-                <div class="col-lg-6">
-                  <div class="card mb-4">
+                <div class="col-lg-6" >
+                  <div class="card mb-4" data-aos="fade-up-right" data-aos-duration="1500">
                     <img src="/hexschool-course08-task/assets/intro-1-BjE3o7NZ.png" class="card-img-top" alt="...">
                     <div class="card-body p-6">
                       <h4 class="fs-6 fw-bold mb-2">ZOBAA 專屬推薦行程</h4>
@@ -256,7 +257,7 @@
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="card mb-4">
+                  <div class="card mb-4" data-aos="fade-up-left" data-aos-duration="1500">
                     <img src="/hexschool-course08-task/assets/intro-2-Cuy_oOTQ.png" class="card-img-top" alt="...">
                     <div class="card-body p-6">
                       <h4 class="fs-6 fw-bold mb-2">旅人攻略集合</h4>
@@ -267,7 +268,7 @@
               </div>
 
               <div class="row offset-row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-down-right" data-aos-duration="1500">
                   <div class="card mb-4">
                     <img src="/hexschool-course08-task/assets/intro-3-BOaJZxZ5.png" class="card-img-top" alt="...">
                     <div class="card-body p-6">
@@ -278,7 +279,7 @@
                 </div>
                 
                 <div class="col-lg-6 ">
-                  <div class="card mb-4">
+                  <div class="card mb-4" data-aos="fade-down-left" data-aos-duration="1500">
                     <img src="/hexschool-course08-task/assets/intro-4-BtzNLPn_.png" class="card-img-top" alt="...">
                     <div class="card-body p-6">
                       <h4 class="fs-6 fw-bold mb-2">銀行專屬優惠</h4>
@@ -300,7 +301,7 @@
 
         <div class="container ">
           <div class="d-lg-flex justify-content-lg-between">
-            <div class="">
+            <div class="" data-aos="flip-left" data-aos-duration="1500">
               <h2 class="fs-3 fs-lg-2xl mb-6 text-primary">今年旅行的 <br>靈感地圖</h2>
               <ul class="nav nav-pills mb-3 fw-bold flex-nowrap overflow-x-auto mb-6" id="pills-tab" role="tablist">
                 <li class="nav-item me-2 flex-shrink-0" role="presentation">
@@ -530,7 +531,7 @@
       <!-- 參考行程區 -->
       <section class="">
         <div class="container py-10 py-lg-15">
-          <div class="mb-lg-15 mb-10 position-relative">
+          <div class="mb-lg-15 mb-10 position-relative" data-aos="flip-up" data-aos-duration="1500">
             <div>
               <img src="data:image/svg+xml,%3csvg%20width='105'%20height='120'%20viewBox='0%200%20105%20120'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M54.0637%20120L73.7512%200H92.5012L72.8137%20120H54.0637ZM0.333252%2090.2344L3.43872%2071.4844H97.1887L94.0832%2090.2344H0.333252ZM11.8762%20120L31.5637%200H50.3137L30.6262%20120H11.8762ZM7.18872%2048.5156L10.3528%2029.7656H104.103L100.939%2048.5156H7.18872Z'%20fill='%23F3EEEC'/%3e%3c/svg%3e" class="hashtag position-absolute" alt="">
             </div>
@@ -541,9 +542,9 @@
             <div class="swiper mySwiper me-lose-12">
               <div class="swiper-wrapper ">
                 <!-- 參考行程1 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" >
                   <a href="produst.html">
-                    <div class="card border-0 ">
+                    <div class="card border-0 " >
                       <div class="position-relative">
                         <img src="/hexschool-course08-task/assets/journey-1-LwwSLAz4.png" class="card-img-top rounded-6" alt="...">
                       </div>
@@ -841,13 +842,13 @@
         <img src="data:image/svg+xml,%3csvg%20width='720'%20height='720'%20viewBox='0%200%20720%20720'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='360'%20cy='360'%20r='320'%20stroke='%23F3EEEC'%20stroke-opacity='0.4'%20stroke-width='80'/%3e%3c/svg%3e" class="position-absolute bgcircle2 d-none d-lg-block" alt="">
 
         <div class="container py-10 py-lg-15">
-          <div class="mb-2 mb-lg-6 position-relative z-index-1">
+          <div class="mb-2 mb-lg-6 position-relative z-index-1" data-aos="zoom-in" data-aos-duration="1800">
             <img src="/hexschool-course08-task/assets/card-Bcs0z4WJ.png" class="w-100 d-none d-lg-block" alt="">
             <img src="/hexschool-course08-task/assets/card-sm-DqpEKDCY.png" class="w-100 d-lg-none" alt="">
           </div>
 
           <div class="choose rounded-7 p-6 p-lg-8 d-lg-flex justify-content-lg-between">
-            <div class="mb-6 mb-lg-0 ">
+            <div class="mb-6 mb-lg-0 " data-aos="zoom-in-right" data-aos-duration="1700" data-aos-delay="500">
               <h3 class="text-primary fw-bold fs-5 fs-lg-1 mb-4 mb-lg-6">為什麼選擇 ZOBAA ?</h3>
               <div class="fs-8 fs-lg-7 mb-lg-6 text-neutral-80">
                 <p>不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。</p>
@@ -863,8 +864,8 @@
             </div>
 
 
-            <div class="d-lg-flex gap-lg-4 ">
-              <div class="bg-white rounded-5 p-6 mb-4 mb-lg-0 small-card d-lg-flex flex-lg-column justify-content-center">
+            <div class="d-lg-flex gap-lg-4 " data-aos="zoom-in-left" data-aos-duration="1800" data-aos-delay="800">
+              <div class="bg-white rounded-5 p-6 mb-4 mb-lg-0 small-card d-lg-flex flex-lg-column justify-content-center" >
                 <div class="">
                   <h3 class="fw-bold  text-primary position-relative d-inline-block pe-3 mb-2 fs-3 fs-lg-1">8 年 
                     <span class="fw-bold position-absolute top-0 start-100 translate-middle fs-4 ">+</span>
@@ -962,6 +963,10 @@
             },
           }
         });
+      </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
       </script>
 
   </body>

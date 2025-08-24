@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>ZOBAA! 旅遊</title>
     <script type="module" crossorigin src="/hexschool-course08-task/assets/main-CZY9_mQV.js"></script>
     <link rel="stylesheet" crossorigin href="/hexschool-course08-task/assets/main-Bby7oimC.css">
@@ -93,13 +95,13 @@
                 <ul class="navbar-nav py-4 ">
 
                     <li class="nav-item py-3 " >
-                        <a href="user.html" class="">
+                        <a href="user.html#order-management" class="">
                             <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17%204H7C5.89543%204%205%204.89543%205%206V19C5%2020.1046%205.89543%2021%207%2021H17C18.1046%2021%2019%2020.1046%2019%2019V6C19%204.89543%2018.1046%204%2017%204Z'%20stroke='%234B4B4B'%20stroke-width='2'/%3e%3cpath%20d='M9%209H15M9%2013H15M9%2017H13'%20stroke='%234B4B4B'%20stroke-width='2'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="list-icon">
                             <p class="d-inline align-middle">訂單管理</p>
                         </a>
                     </li>
                     <li class="nav-item py-3" >
-                        <a href="user.html" class="">
+                        <a href="user.html#my-favorites" class="">
                             <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2020.3249C11.7667%2020.3249%2011.5293%2020.2832%2011.288%2020.1999C11.0467%2020.1166%2010.834%2019.9832%2010.65%2019.7999L8.925%2018.2249C7.15833%2016.6082%205.56233%2015.0042%204.137%2013.4129C2.71167%2011.8216%201.99933%2010.0672%202%208.1499C2%206.58324%202.525%205.2749%203.575%204.2249C4.625%203.1749%205.93333%202.6499%207.5%202.6499C8.38333%202.6499%209.21667%202.83724%2010%203.2119C10.7833%203.58657%2011.45%204.09924%2012%204.7499C12.55%204.0999%2013.2167%203.58757%2014%203.2129C14.7833%202.83824%2015.6167%202.65057%2016.5%202.6499C18.0667%202.6499%2019.375%203.1749%2020.425%204.2249C21.475%205.2749%2022%206.58324%2022%208.1499C22%2010.0666%2021.2917%2011.8249%2019.875%2013.4249C18.4583%2015.0249%2016.85%2016.6332%2015.05%2018.2499L13.35%2019.7999C13.1667%2019.9832%2012.9543%2020.1166%2012.713%2020.1999C12.4717%2020.2832%2012.234%2020.3249%2012%2020.3249ZM11.05%206.7499C10.5667%206.06657%2010.05%205.54557%209.5%205.1869C8.95%204.82824%208.28333%204.64924%207.5%204.6499C6.5%204.6499%205.66667%204.98324%205%205.6499C4.33333%206.31657%204%207.1499%204%208.1499C4%209.01657%204.30833%209.93757%204.925%2010.9129C5.54167%2011.8882%206.27933%2012.8339%207.138%2013.7499C7.99667%2014.6659%208.88%2015.5242%209.788%2016.3249C10.696%2017.1256%2011.4333%2017.7839%2012%2018.2999C12.5667%2017.7832%2013.3043%2017.1249%2014.213%2016.3249C15.1217%2015.5249%2016.005%2014.6666%2016.863%2013.7499C17.721%2012.8332%2018.4583%2011.8876%2019.075%2010.9129C19.6917%209.93824%2020%209.01724%2020%208.1499C20%207.1499%2019.6667%206.31657%2019%205.6499C18.3333%204.98324%2017.5%204.6499%2016.5%204.6499C15.7167%204.6499%2015.05%204.82924%2014.5%205.1879C13.95%205.54657%2013.4333%206.06724%2012.95%206.7499C12.8333%206.91657%2012.6917%207.04157%2012.525%207.1249C12.3583%207.20824%2012.1833%207.2499%2012%207.2499C11.8167%207.2499%2011.6417%207.20824%2011.475%207.1249C11.3083%207.04157%2011.1667%206.91657%2011.05%206.7499Z'%20fill='%234B4B4B'/%3e%3c/svg%3e" alt="heart-icon">
                             <p class="d-inline align-middle">我的收藏</p>
                         </a>
@@ -144,7 +146,7 @@
           </div>
 
           <!-- 主要大照片區 電腦樣式 -->
-          <div class="d-lg-flex rounded-7 overflow-hidden gap-lg-2 position-relative d-none">
+          <div class="d-lg-flex rounded-7 overflow-hidden gap-lg-2 position-relative d-none" data-aos="zoom-in-up" data-aos-duration="1500">
             <div class="w-70">
               <img src="/hexschool-course08-task/assets/harukas-1-wvTkdtXp.png" class="w-100 h-100 object-fit-fill" alt="">
             </div>
@@ -159,7 +161,7 @@
         </div>
 
         <!-- 主要大照片區 手機樣式 -->
-        <div class="d-lg-none mb-10">
+        <div class="d-lg-none mb-10" data-aos="zoom-in-up" data-aos-duration="1500">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper h-240px">
               <div class="swiper-slide ">
@@ -177,7 +179,7 @@
         </div>
 
         <!-- 文字區 -->
-        <div class="container ">
+        <div class="container " data-aos="zoom-in-up" data-aos-duration="1500">
           <div class="row ">
             <div class="col-lg-8">
               <div class="bg-primary-10 p-6 rounded-7 h-100">
@@ -245,7 +247,7 @@
           <h2 class="text-primary fs-3 mb-6"># 選擇方案</h2>
           <div class="accordion " id="accordionExample">
             <!-- 熱門選擇 -->
-              <div class="accordion-item rounded-6 overflow-hidden mb-6">
+              <div class="accordion-item rounded-6 overflow-hidden mb-6" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="100">
                 <div class="overflow-hidden position-relative">
                   <h3 class="p-6 bg-primary text-primary-10 fs-6">熱門選擇</h3>
                   <img src="data:image/svg+xml,%3csvg%20width='63'%20height='48'%20viewBox='0%200%2063%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32.2383%2048L44.0508%20-24H55.3008L43.4883%2048H32.2383ZM0%2030.1406L1.86328%2018.8906H58.1133L56.25%2030.1406H0ZM6.92578%2048L18.7383%20-24H29.9883L18.1758%2048H6.92578ZM4.11328%205.10938L6.01172%20-6.14062H62.2617L60.3633%205.10938H4.11328Z'%20fill='%23F3EEEC'%20fill-opacity='0.2'/%3e%3c/svg%3e" class="position-absolute title-bg" alt="">
@@ -394,7 +396,7 @@
               </div>
 
               <!-- 套裝行程 1-->
-              <div class="accordion-item rounded-6 overflow-hidden mb-6">
+              <div class="accordion-item rounded-6 overflow-hidden mb-6" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="200">
                 <div class="overflow-hidden position-relative">
                   <h3 class="p-6 bg-primary-60 text-primary-10 fs-6">套裝行程</h3>
                   <img src="data:image/svg+xml,%3csvg%20width='63'%20height='48'%20viewBox='0%200%2063%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32.2383%2048L44.0508%20-24H55.3008L43.4883%2048H32.2383ZM0%2030.1406L1.86328%2018.8906H58.1133L56.25%2030.1406H0ZM6.92578%2048L18.7383%20-24H29.9883L18.1758%2048H6.92578ZM4.11328%205.10938L6.01172%20-6.14062H62.2617L60.3633%205.10938H4.11328Z'%20fill='%23F3EEEC'%20fill-opacity='0.2'/%3e%3c/svg%3e" class="position-absolute title-bg" alt="">
@@ -543,7 +545,7 @@
               </div>
 
               <!-- 套裝行程 2-->
-              <div class="accordion-item rounded-6 overflow-hidden">
+              <div class="accordion-item rounded-6 overflow-hidden" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="300">
                 <button class="btn text-start p-lg-6 p-4 w-100 border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                   <div class="d-lg-flex justify-content-lg-between">
 
@@ -941,6 +943,10 @@
       });
     </script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
 
